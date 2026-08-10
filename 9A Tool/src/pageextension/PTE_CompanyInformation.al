@@ -9,13 +9,13 @@ pageextension 51100 "PTE_CompanyInformation" extends "Company Information"
     }
     actions
     {
-        addlast(Setup)
+        addlast(Processing)
         {
-            action(ToolAction)
+            action(UpdateItemAction)
             {
                 ApplicationArea = All;
-                Caption = 'My Action';
-                Image = Information;
+                Caption = 'Update Item ction';
+                Image = UpdateDescription;
                 trigger OnAction()
                 var
                     Item: Record Item;
