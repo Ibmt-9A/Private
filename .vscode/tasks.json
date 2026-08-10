@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build 9A Tool",
+            "type": "shell",
+            "command": "\"C:\\Users\\ibmt\\.vscode\\extensions\\ms-dynamics-smb.al-17.0.2273547\\bin\\win32\\alc.exe\" /project:\"${workspaceFolder}\\9A Tool\" /packagecachepath:\"${workspaceFolder}\\9A Tool\\.alpackages\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$al",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

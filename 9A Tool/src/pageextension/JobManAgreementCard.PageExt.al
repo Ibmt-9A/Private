@@ -1,13 +1,9 @@
-pageextension 62008 "PTE_JobManAgreementCard" extends JobManAgreementCard
+pageextension 51000 "PTE_CompanyInformation" extends "Company Information"
 {
     layout
     {
         addlast(General)
         {
-            field(PTE_DynEmpType; Rec.PTE_DynEmpType)
-            {
-                ApplicationArea = all;
-            }
 
         }
     }
