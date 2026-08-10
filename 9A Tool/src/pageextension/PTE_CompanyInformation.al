@@ -11,32 +11,47 @@ pageextension 51100 "PTE_CompanyInformation" extends "Company Information"
     {
         addlast(Processing)
         {
-            action(UpdateItemAction)
+            action(TestClientType)
             {
+                Caption = 'Test Client Type';
                 ApplicationArea = All;
-                Caption = 'Update Item ction';
-                Image = UpdateDescription;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = PostMail;
+
                 trigger OnAction()
                 var
-                    Item: Record Item;
-                    w: Dialog;
+                    clientType: ClientType;
                 begin
-                    w.Open('Updating items #1##################');
-                    Item.Reset();
-                    If Item.FindSet() then begin
-                        repeat
-                            w.Update(1, Item."No.");
-                            Item.CBXBool := true;
-                            Item.Modify();
-                        until Item.Next() = 0;
+                    clientType := Session.CurrentClientType();
+                    case clientType of
+                        ClientType::Windows:
+                            Message('Windows/PC client');
+                        ClientType::Web:
+                            Message('Web client (browser på PC)');
+                        ClientType::Tablet:
+                            Message('Tablet client');
+                        ClientType::Phone:
+                            Message('Phone client');
+                        else
+                            Message('Ukendt klienttype');
                     end;
-
-                    w.Close();
-
-                    Message('All items updated successfully.');
                 end;
             }
 
+            action(CorrectItem)
+            {
+                caption = 'Correct Item';
+                ApplicationArea = all;
+
+                trigger OnAction()
+                var
+                    ToolActions: Codeunit "ToolActions";
+                begin
+                    ToolActions.CorrectItem();
+                end;
+            }
         }
     }
 }
