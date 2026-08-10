@@ -1,4 +1,4 @@
-pageextension 51000 "PTE_CompanyInformation" extends "Company Information"
+pageextension 51100 "PTE_CompanyInformation" extends "Company Information"
 {
     layout
     {
@@ -9,9 +9,9 @@ pageextension 51000 "PTE_CompanyInformation" extends "Company Information"
     }
     actions
     {
-        addlast(General)
+        addlast(Setup)
         {
-            action(MyAction)
+            action(ToolAction)
             {
                 ApplicationArea = All;
                 Caption = 'My Action';
@@ -19,14 +19,19 @@ pageextension 51000 "PTE_CompanyInformation" extends "Company Information"
                 trigger OnAction()
                 var
                     Item: Record Item;
+                    w: Dialog;
                 begin
+                    w.Open('Updating items #1##################');
                     Item.Reset();
                     If Item.FindSet() then begin
                         repeat
+                            w.Update(1, Item."No.");
                             Item.CBXBool := true;
                             Item.Modify();
                         until Item.Next() = 0;
                     end;
+
+                    w.Close();
 
                     Message('All items updated successfully.');
                 end;
