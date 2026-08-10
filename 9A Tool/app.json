@@ -1,0 +1,43 @@
+{
+  "id": "dcc135d8-161b-48f9-8f8d-a99999bfb9c9",
+  "name": "9A Tool",
+  "publisher": "9altitudes",
+  "version": "1.0.0.0",
+  "brief": "Jezet General Customizations",
+  "description": "Jezet General Customizations",
+  "privacyStatement": "https://www.9altitudes.com/app-privacy-policy",
+  "EULA": "https://www.9altitudes.com/app-terms-conditions",
+  "help": "",
+  "url": "",
+  "logo": "Media/logodetail.png",
+  "screenshots": [],
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
+  "idRanges": [
+    {
+      "from": 62000,
+      "to": 62099
+    }
+  ],
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "supportedLocales": [
+    "nl-BE"
+  ],
+  "dependencies": [
+    {
+      "id": "88b17f5c-c5a1-4c2e-aff3-3d7aba65b4c5",
+      "name": "JobManager",
+      "version": "1.0.0.0",
+      "publisher": "dynalogic"
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "14.0"
+}

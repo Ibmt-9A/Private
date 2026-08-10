@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="nl-BE" original="Jezet General Customizations.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1533190954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Customization Setup</source>
+          <target state="translated">Jezet Seating Instellingen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">Code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 2467491444 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Daily hours column for statistics</source>
+          <target state="translated">Kolom met dagelijkse uren voor statistieken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Daily Hours - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 2467491444 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics Column Daily Hours</source>
+          <target state="translated">Statistieken Kolom Dagelijkse uren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Daily Hours - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 3691083078 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No. column for statistics</source>
+          <target state="translated">Kolom Job No. voor statistieken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 3691083078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics Column Job No.</source>
+          <target state="translated">Statistieken Kolom Baannr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Job No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 1329195433 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource group column for statistics</source>
+          <target state="translated">Kolom voor middelengroep voor statistieken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Resource Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 1329195433 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics Column Resource Group</source>
+          <target state="translated">Statistieken Kolom Hulpmiddelengroep</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Resource Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 1542321126 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Task ID column for statistics</source>
+          <target state="translated">Kolom taak-ID voor statistieken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Task ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1533190954 - Field 1542321126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics Column Task ID</source>
+          <target state="translated">Statistieken Kolom Taak-ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_Gen. Customization Setup - Field Stat. Column Task ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TimeScheduleBreaks</source>
+          <target state="translated">TijdschemaPauzes</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 327207602 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Breaks Min. Adjust To field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Pauzes Min. Aanpassen aan.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. Adjust To - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 327207602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Breaks Min. Adjust To</source>
+          <target state="translated">Pauzes Min. Aanpassen aan</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. Adjust To - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 188947162 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Breaks Min. From field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Pauzes min. van.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. From - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 188947162 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Breaks Min. From</source>
+          <target state="translated">Pauzes Min. Van</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 807553413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Breaks Min. To field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Pauzes min. aan.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. To - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 807553413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Breaks Min. To</source>
+          <target state="translated">Pauzes Min. Aan</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field Breaks Min. To - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 3311759184 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the CalcNo field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld CalcNo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field CalcNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 3311759184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CalcNo</source>
+          <target state="translated">CalcNo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field CalcNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 1016130111 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the EntryNo field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld EntryNo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field EntryNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 1016130111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EntryNo</source>
+          <target state="translated">ToegangNee</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field EntryNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 2508614043 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the TimeScheduleNo field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld TimeScheduleNo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field TimeScheduleNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3537409614 - Field 2508614043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TimeScheduleNo</source>
+          <target state="translated">TijdschemaNee</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE_TimeScheduleBreaks - Field TimeScheduleNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1533190954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jezet Setup</source>
+          <target state="translated">Jezet Setup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_Gen. Customization Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1533190954 - Control 84074407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics</source>
+          <target state="translated">Statistiek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_Gen. Customization Setup - Control Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 25700210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <target state="translated">Saldo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 1884899931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Balance field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Saldo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control BalanceAsText - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 1884899931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <target state="translated">Saldo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control BalanceAsText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 838873691 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Consumed field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Verbruikt op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Consumed as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 838873691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Consumed</source>
+          <target state="translated">Verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Consumed as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3527624913 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Planned Not Consumed field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Gepland niet verbruikt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Planned Not Cons. as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3527624913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Planned Not Consumed</source>
+          <target state="translated">Gepland, niet verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Planned Not Cons. as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 5822649 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Balance field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Startsaldo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Start Balance as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 5822649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Balance</source>
+          <target state="translated">Start Balans</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Start Balance as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 4086887865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>📅 Request Full Days</source>
+          <target state="translated">📅 Volledige dagen aanvragen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_FullDayRequestDates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 1185987296 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ending Date field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Einddatum op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE1_Ending Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 1185987296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <target state="translated">Einddatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE1_Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2853840645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Starting Date field.</source>
+          <target state="translated">Specificeert de waarde van het veld Begindatum.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE1_Starting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2853840645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <target state="translated">Begindatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE1_Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2949924769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>🕑 Request Partial Day</source>
+          <target state="translated">🕑 Gedeeltelijke dag aanvragen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_PartialDayRequestDates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3166869895 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ending Date field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Einddatum op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Ending Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3166869895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <target state="translated">Einddatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3290537176 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ending Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Eindtijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Ending Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3290537176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Time</source>
+          <target state="translated">Eindtijd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Ending Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 699553790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Starting Date field.</source>
+          <target state="translated">Specificeert de waarde van het veld Begindatum.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Starting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 699553790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <target state="translated">Begindatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2893739677 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Starting Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Begintijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Starting Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2893739677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Time</source>
+          <target state="translated">Begintijd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_Starting Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 2368122547 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Type</source>
+          <target state="translated">Aanvraag type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control RequestType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3547433084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Full Day Request field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Aanvraag voor een volledige dag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_FullDayRequest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Control 3547433084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Full Day Request</source>
+          <target state="translated">Aanvraag voor een hele dag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Control PTE_FullDayRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Action 4234892993 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Will cancel the leave request.</source>
+          <target state="translated">Annuleert de verlofaanvraag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Action Action_Cancel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Action 4234892993 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">Annuleren</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Action Action_Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Action 3937708407 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Will create a leave request for the selected period.</source>
+          <target state="translated">Maakt een verlofaanvraag aan voor de geselecteerde periode.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Action Action_OK - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1901877817 - Action 3937708407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OK</source>
+          <target state="translated">OK</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_JobManPrompt - Action Action_OK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3537409614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TimeScheduleBreaks</source>
+          <target state="translated">TijdschemaPauzes</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PTE_TimeScheduleBreaks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1214093179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Planning Etiket</source>
+          <target state="needs-review-translation">Jobplanning Etiket</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE Job Planning Etiket - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1214093179 - Control 3091280356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Etiket per Planning Line</source>
+          <target state="needs-review-translation">Etiket per plannigslijn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE Job Planning Etiket - Control PrintIndividual - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jezet Statistics Column Report</source>
+          <target state="translated">Jezet Statistieken Kolom Rapport</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - NamedType 2654612678" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Missing dates filter</source>
+          <target state="translated">Filter voor ontbrekende datums</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - NamedType TextNoDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - NamedType 2478341686" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target state="translated">Pagina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - NamedType TextReportPageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - Control 3880268703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specification</source>
+          <target state="translated">Specificatie</target>
+          <note from="Developer" annotates="general" priority="2">{R6182809-Q1000000023-P26171}</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - Control Specification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - Control 1187362184 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select the column set to be used for the report.</source>
+          <target state="translated">Selecteer de kolommenset die moet worden gebruikt voor het rapport.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - Control Req_PrintStatColumn_SetId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - Control 3025356022 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print the report with line seperators.</source>
+          <target state="translated">Druk het rapport af met regelscheidingstekens.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - Control Req_PrintStripes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 777077713 - Control 3025356022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stripes</source>
+          <target state="translated">Strepen</target>
+          <note from="Developer" annotates="general" priority="2">{T6182411-F8-P8629} {N46-P8629}</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_JobManStatColumn - Control Req_PrintStripes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Old Stock Items</source>
+          <target state="translated">Artikelen oude voorraad</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 4287866853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the period stop date to filter old stock items.</source>
+          <target state="translated">Geef de stopdatum van de periode op om oude voorraaditems te filteren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemEndPeriodStopDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 4287866853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Stop Date</source>
+          <target state="translated">Periode Stopdatum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemEndPeriodStopDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 3360207536 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the start date for filtering old stock items.</source>
+          <target state="translated">Geef de begindatum op voor het filteren van oude voorraaditems.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemPeriodStartDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 3360207536 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Start Date</source>
+          <target state="translated">Startdatum periode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemPeriodStartDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 1778657993 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check this box to update the cost of old stock items.</source>
+          <target state="translated">Vink dit vakje aan om de kosten van oude voorraadartikelen bij te werken.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemUpdateCost - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 1778657993 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Item Unit Cost</source>
+          <target state="translated">Artikel eenheidsprijs bijwerken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemUpdateCost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 612376629 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check this box to include items with zero inventory.</source>
+          <target state="translated">Vink dit vakje aan om items met nulinventaris op te nemen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemZeroOK - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2473643937 - Control 612376629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Zero Inventory</source>
+          <target state="translated">Nul inventaris opnemen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PTE_Old Stock Items - Control ItemZeroOK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time Counter Description</source>
+          <target state="translated">Beschrijving van de tijdteller</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 2637797816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period No.</source>
+          <target state="translated">Periodenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn PeriodNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 2683408241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Consumed</source>
+          <target state="translated">Verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn JMCCL_ConsumedCalcTimeDecimal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryFilter 1572366137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From Date Time</source>
+          <target state="translated">Vanaf datum en tijd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryFilter FromDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryFilter 1189882006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>To Date Time</source>
+          <target state="translated">Datum-Tijd Gelagerd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryFilter ToDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 613901353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Balance</source>
+          <target state="translated">Start Balans</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn JMSCL_StartCalcTimeDecimal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 3038584861 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time Count No.</source>
+          <target state="translated">Tijd tellen Nee.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn JMSCL_StartTimeCountNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryColumn 2158378634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee No.</source>
+          <target state="translated">Werknemer Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryColumn JME_EmployeeNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2072858096 - QueryColumn 969158196 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calc. Time Decimal</source>
+          <target state="translated">Bereken Tijd Decimaal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManIpcActivity - QueryColumn JM_ST_CALC_LINE_CalcTimeDecimal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2072858096 - QueryColumn 2561338116 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee No.</source>
+          <target state="translated">Werknemer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManIpcActivity - QueryColumn JM_ST_CALC_LINE_EmployeeNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2072858096 - QueryColumn 1345805257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activity No.</source>
+          <target state="translated">Activiteit nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManIpcActivity - QueryColumn JM_IPC_ACT_COUNT_TimeCountNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2072858096 - QueryColumn 3459607448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category No.</source>
+          <target state="translated">Categorie nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManIpcActivity - QueryColumn JM_IPC_ACT_Category - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2072858096 - QueryColumn 2994091310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target state="translated">Projectnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManIpcActivity - QueryColumn JM_IPC_ACT_JobNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2863727927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acerta export Add-on</source>
+          <target state="translated">Acerta export Add-on</target>
+          <note from="Developer" annotates="general" priority="2">Acerta {C419-Q1003-P26171} {C6182710-Q1000000064-P26171}</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_DynJobManAcertaExpAddon - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2863727927 - NamedType 3950098385" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Counter #1## Total #2### @3@@@@@@@@</source>
+          <target state="needs-review-translation">Teller #1## Totaal #2## @3@@@@@@@@</target>
+          <note from="Developer" annotates="general" priority="2">{T332-F4-P8629} #1## {R1304-Q1088-P26171} #2### @3@@@@@@@@</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">The placeholder "#2###" was found in source, but not in target.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_DynJobManAcertaExpAddon - NamedType ProgressLbl</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2863727927 - Control 75106347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+          <target state="translated">Parameters</target>
+          <note from="Developer" annotates="general" priority="2">{R2-N2-C1900000002-P8629}</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_DynJobManAcertaExpAddon - Control Parameter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2863727927 - Control 858205276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sum up pay on 'Pay Type' and 'Rate'</source>
+          <target state="translated">Salaris sommeren op 'Salaristype' en 'Tarief'</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_DynJobManAcertaExpAddon - Control doSum - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2863727927 - Control 858205276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sum up pay on 'Pay Type' and 'Rate'</source>
+          <target state="translated">Salaris sommeren op 'Salaristype' en 'Tarief'</target>
+          <note from="Developer" annotates="general" priority="2">{C410-Q1031-P26171} '{T6182503-F10-P8629}' {C6182710-Q1000000017-P26171} '{T6182553-F10-P8629}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_DynJobManAcertaExpAddon - Control doSum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3218048837 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Planning Lines Jezet</source>
+          <target state="translated">Import Planningsregels Jezet</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort PTE_Import Planning Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2177179010 - Action 1214093179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Print Job Planning Etiket.</source>
+          <target state="needs-review-translation">Print Job Planning Etiket.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Job Planning Lines - Action PTE Job Planning Etiket - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2177179010 - Action 1214093179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Job Planning Etiket</source>
+          <target state="translated">Jobplanning Etiket</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Job Planning Lines - Action PTE Job Planning Etiket - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4058472205 - Action 3333615373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2077750279">
+          <source>Import Planning Lines Jezet</source>
+          <target state="translated">Import Planningsregels Jezet</target>	  
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_Job Task Lines Subform - Action PTE_ImportPlanningLines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 364417914 - Action 117477811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2809527014">
+          <source>Schedule Breaks</source>
+          <target state="translated">Pauzes inplannen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManCalcTimeSchedule - Action PTE_NALTimeScheduleBreaks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 1417202974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>Specifies the value of the From Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Vanaf tijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlFromTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 1417202974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>From Time</source>
+          <target state="translated">Tijdstip</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlFromTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 221120766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>Calculates the working hours or days for the planned absence.</source>
+          <target state="translated">Berekent de werkuren of dagen voor de geplande afwezigheid.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlRecordDuration - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 221120766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>Working Hours / Day(s)</source>
+          <target state="translated">Werktijden / -dag(en)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlRecordDuration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 923143137 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>Specifies the value of the To Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Aan tijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlToTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1024328763 - Control 923143137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1802583497">
+          <source>To Time</source>
+          <target state="translated">Wachttijd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsList - Control PTE_ControlToTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Method 3428598452 - NamedType 4233690037" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 584376729">
+          <source>%1 missing</source>
+          <target state="translated">%1 ontbreekt</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Error message for missing field</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Method AbsenceRequestNew - NamedType TextMissingLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Method 3428598452 - NamedType 1957289842" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 584376729">
+          <source>%1 should not be before %2</source>
+          <target state="translated">%1 s niet voor %2 zijn</target>
+          <note from="Developer" annotates="general" priority="2">%1 &lt; %2</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Method AbsenceRequestNew - NamedType TextLessLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Method 96501334 - NamedType 4233690037" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 584376729">
+          <source>%1 missing</source>
+          <target state="translated">%1 ontbreekt</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Error message for missing field</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Method AbsenceRequestRemove - NamedType TextMissingLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Method 1241162633 - NamedType 3939723252" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 584376729">
+          <source>No JobManUserInterface record found for the current employee.</source>
+          <target state="translated">Er is geen JobManUserInterface-record gevonden voor de huidige werknemer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Method GetJobManUserInterface - NamedType JobManUserInterfaceNotFoundLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Action 546578432 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>New absence request.</source>
+          <target state="translated">Nieuw afwezigheidsverzoek.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Action PTE_ActionNew - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Action 546578432 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>New</source>
+          <target state="translated">Nieuw</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Action PTE_ActionNew - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Action 189292706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Remove absence request.</source>
+          <target state="translated">Verzoek om afwezigheid verwijderen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Action PTE_ActionRemove - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Action 189292706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Remove</source>
+          <target state="translated">Verwijderen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Action PTE_ActionRemove - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 1417202974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Specifies the value of the From Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Vanaf tijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlFromTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 1417202974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>From Time</source>
+          <target state="translated">Tijdstip</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlFromTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 221120766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Calculates the working hours or days for the planned absence.</source>
+          <target state="translated">Berekent de werkuren of dagen voor de geplande afwezigheid.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlRecordDuration - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 221120766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Working Hours / Day(s)</source>
+          <target state="translated">Werktijden / -dag(en)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlRecordDuration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 923143137 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>Specifies the value of the To Time field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Aan tijd op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlToTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 584376729 - Control 923143137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 237160554">
+          <source>To Time</source>
+          <target state="translated">Wachttijd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManPlannedJobsRequestLi - Control PTE_ControlToTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2362556405 - Action 38608059 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1593735999">
+          <source>Statistics Column per Task-ID</source>
+          <target state="translated">Statistische kolom per taak-ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManRoleCenterAdmin - Action PTE_ReportJobManStatColumn - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2362556405 - Action 38608059 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1593735999">
+          <source>Jezet Statistics Column</source>
+          <target state="translated">Jezet Statistieken Kolom</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE_JobManRoleCenterAdmin - Action PTE_ReportJobManStatColumn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1940142871 - Field 4192084367 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 820227501">
+          <source>The blue work clothes (collars) used to be worn by workers. Employees used to come to the office in (white) shirts... What a stigmatization 😦</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Werknemertype op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManAgreement - Field PTE_DynEmpType - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1940142871 - Field 4192084367 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 820227501">
+          <source>Employee type</source>
+          <target state="translated">Type werknemer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManAgreement - Field PTE_DynEmpType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 196949974 - Field 3199384005 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1750527872">
+          <source>Period Consumed Sum</source>
+          <target state="translated">Verbruikte periode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManCalcCounter - Field PTE_SumConsCalcTimePeriodDec - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 196949974 - Field 1265698750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1750527872">
+          <source>Period Start Sum</source>
+          <target state="translated">Periode Startsom</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManCalcCounter - Field PTE_SumStartCalcTimePeriodDec - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3991423464 - Field 1122518440 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 955029982">
+          <source>Specifies the value of the No Ajust Break TriggerCode field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld No Ajust Break TriggerCode.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManSetup - Field PTE_No Ajust Break TriggerCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3991423464 - Field 1122518440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 955029982">
+          <source>No Ajust Break TriggerCode</source>
+          <target state="translated">Geen Ajust Break TriggerCode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManSetup - Field PTE_No Ajust Break TriggerCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1109265367 - Field 4226627661 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 761494541">
+          <source>Specifies the value of the Split Per Task ID field.</source>
+          <target state="translated">Specificeert de waarde van het veld Splitsen per taak-ID.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManStatColumnSet - Field PTE_Split Per Task ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1109265367 - Field 4226627661 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 761494541">
+          <source>Split Per Task ID</source>
+          <target state="translated">Opsplitsen per taak-ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManStatColumnSet - Field PTE_Split Per Task ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3194580237 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>A calculated value based on the Starting Balance - All Consumption (registered and planned).</source>
+          <target state="translated">Een berekende waarde op basis van het startsaldo - alle verbruiken (geregistreerd en gepland).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Bal. - All Cons. as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3194580237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Balance - All Consumption</source>
+          <target state="translated">Saldo - Alle verbruiken</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Bal. - All Cons. as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3517322564 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Balance field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Saldo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Balance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3517322564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Balance</source>
+          <target state="translated">Saldo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2286532029 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>A calculated value based on the Starting Balance - All Consumption (registered and planned).</source>
+          <target state="translated">Een berekende waarde op basis van het startsaldo - alle verbruiken (geregistreerd en gepland).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Balance - All Cons. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2286532029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Balance - All Cons.</source>
+          <target state="translated">Balans - Alle Cons.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Balance - All Cons. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3670218038 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Calc No. field.</source>
+          <target state="translated">Specificeert de waarde van het Calc-nr. veld.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_CalcNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3670218038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Calculation ID</source>
+          <target state="translated">Berekenings-ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_CalcNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 4270859858 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Consumed field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Verbruikt op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Consumed - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 4270859858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Consumed</source>
+          <target state="translated">Verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Consumed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 838873691 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Consumed as Text field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Verbruikt als tekst.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Consumed as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 838873691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Consumed</source>
+          <target state="translated">Verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Consumed as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2215581935 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Employee No. field.</source>
+          <target state="translated">Specificeert de waarde van het werknemersnr. veld.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_EmployeeNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2215581935 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Employee No.</source>
+          <target state="translated">Werknemer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_EmployeeNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3527624913 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Planned Not Consumed as Text field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Gepland niet verbruikt als tekst.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Planned Not Cons. as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3527624913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Planned Not Consumed</source>
+          <target state="translated">Gepland, niet verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Planned Not Cons. as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3449907625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Planned Not Consumed field.</source>
+          <target state="translated">Hiermee geeft u de waarde op van het veld Gepland niet verbruikt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Planned Not Consumed - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 3449907625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Planned Not Consumed</source>
+          <target state="translated">Gepland, niet verbruikt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Planned Not Consumed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 1537894675 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Profile Date field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Profieldatum op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_ProfileDateFilter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 1537894675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Profile Date</source>
+          <target state="translated">Profiel Datum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_ProfileDateFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 4270430292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Start Balance field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Startsaldo op.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Start Balance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 4270430292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Start Balance</source>
+          <target state="translated">Start Balans</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Start Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 5822649 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Start Balance as Text field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het veld Startsaldo op als tekst.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Start Balance as Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 5822649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Start Balance</source>
+          <target state="translated">Start Balans</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_Start Balance as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2693381723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Specifies the value of the Time Count No. field.</source>
+          <target state="translated">Hiermee geeft u de waarde van het aantal uren op. veld.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_TimeCountNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 583814392 - Field 2693381723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 255497150">
+          <source>Time Count No.</source>
+          <target state="translated">Tijd tellen Nee.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE_JobManTmpBalance - Field PTE_TimeCountNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 652951142 - EnumValue 3194079491 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blue colar</source>
+          <target state="translated">Blauwe overal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum PTE_DynEmplTypeEnum - EnumValue BlueCollar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 652951142 - EnumValue 3820246660 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>White colar</source>
+          <target state="translated">Witte overal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum PTE_DynEmplTypeEnum - EnumValue WhiteCollar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 1174461102 - QueryDataItem 1496542825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>To Date Time</source>
+          <target state="translated">Datum-Tijd Gelagerd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query PTE_JobManEmployeemBalance - QueryDataItem JMSStartCalcLine - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
