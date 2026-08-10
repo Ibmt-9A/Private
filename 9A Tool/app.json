@@ -27,12 +27,6 @@
     "nl-BE"
   ],
   "dependencies": [
-    {
-      "id": "d6687f6d-409b-456c-b515-4c70e745504e",
-      "name": "Chainbox eCommerce",
-      "publisher": "Chainbox",
-      "version": "1.0.4.0"
-    }
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
