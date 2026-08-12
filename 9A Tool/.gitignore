@@ -9,3 +9,4 @@ rad.json
 *.app
 *.g.xlf
 
+.vscode/mcp.json

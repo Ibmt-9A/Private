@@ -11,7 +11,22 @@
     "ado": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@azure-devops/mcp", "${input:ado_org}"]
+      "args": [
+        "-y",
+        "@azure-devops/mcp",
+        "${input:ado_org}"
+      ]
+    },
+    "AL Schema for BC MCP": {
+      "type": "stdio",
+      "command": "C:\\Program Files\\Microsoft VS Code\\Code.exe",
+      "args": [
+        "c:\\Users\\ibmt\\.vscode\\extensions\\ruuben80.al-mcp-bc-graph-1.1.1\\bin\\mcp-server\\server.js"
+      ],
+      "env": {
+        "ELECTRON_RUN_AS_NODE": "1",
+        "BC_EXTENSION_ID": "Ruuben80.al-mcp-bc-graph"
+      }
     }
   }
 }

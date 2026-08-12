@@ -21,8 +21,6 @@
     }
   ],
   "build": {
-    "by": "AL Language Extension,17.0.2273547",
-    "timestamp": "2026-08-03T09:39:04.3421530+00:00",
-    "compilerVersion": "17.0.34.45391"
+    "by": "AL Language Extension,17.0.2273547"
   }
 }
