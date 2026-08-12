@@ -1,0 +1,28 @@
+{
+  "id": "a6f9fdca-f579-419c-8fba-85a9f361e82a",
+  "name": "9A Update Blocker",
+  "publisher": "9altitudes",
+  "version": "1.0.0.0",
+  "runtime": "16.0",
+  "target": "Cloud",
+  "application": "25.0.0.0",
+  "platform": "28.0.53225.0",
+  "contextSensitiveHelpUrl": "https://google.com/",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true,
+    "applyToDevExtension": false
+  },
+  "idRanges": [
+    {
+      "from": 99999,
+      "to": 99999
+    }
+  ],
+  "build": {
+    "by": "AL Language Extension,17.0.2273547",
+    "timestamp": "2026-08-03T09:39:04.3421530+00:00",
+    "compilerVersion": "17.0.34.45391"
+  }
+}
