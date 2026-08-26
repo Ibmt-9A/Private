@@ -1,0 +1,6 @@
+{
+  "name": "DefaultRuleSet",
+  "description": "Promote Info/Warning diagnostics from CodeCop, PerTenantExtensionCop, UICop, and LinterCop to Error (auto-synced 202 rules on 2026-02-21)",
+  "rules": [
+  ]
+}

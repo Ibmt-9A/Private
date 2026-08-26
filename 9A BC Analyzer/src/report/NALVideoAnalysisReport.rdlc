@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DataSet_Result">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="MainTable">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>14cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TimestampHdr">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Timestamp</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>#0078d4</BackgroundColor>
+                            <Padding>
+                              <Left>4pt</Left>
+                              <Right>4pt</Right>
+                              <Top>2pt</Top>
+                              <Bottom>2pt</Bottom>
+                            </Padding>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DescHdr">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Description</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>#0078d4</BackgroundColor>
+                            <Padding>
+                              <Left>4pt</Left>
+                              <Right>4pt</Right>
+                              <Top>2pt</Top>
+                              <Bottom>2pt</Bottom>
+                            </Padding>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TimestampVal">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SequenceTime.Value</Value>
+                                  <Style>
+                                    <FontWeight>=IIF(Fields!IsSceneChange.Value,"Bold","Normal")</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>=IIF(Fields!IsSceneChange.Value,"#fff3cd","White")</BackgroundColor>
+                            <Padding>
+                              <Left>4pt</Left>
+                              <Right>4pt</Right>
+                              <Top>2pt</Top>
+                              <Bottom>2pt</Bottom>
+                            </Padding>
+                            <Border>
+                              <Bottom>
+                                <Style>Solid</Style>
+                                <Color>#e0e0e0</Color>
+                              </Bottom>
+                            </Border>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DescVal">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!LineDescription.Value</Value>
+                                  <Style>
+                                    <FontWeight>=IIF(Fields!IsSceneChange.Value,"Bold","Normal")</FontWeight>
+                                    <Color>=IIF(Fields!IsSceneChange.Value,"#856404","#333333")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>=IIF(Fields!IsSceneChange.Value,"#fff3cd","White")</BackgroundColor>
+                            <Padding>
+                              <Left>4pt</Left>
+                              <Right>4pt</Right>
+                              <Top>2pt</Top>
+                              <Bottom>2pt</Bottom>
+                            </Padding>
+                            <Border>
+                              <Bottom>
+                                <Style>Solid</Style>
+                                <Color>#e0e0e0</Color>
+                              </Bottom>
+                            </Border>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0cm</Size>
+                    <CellContents>
+                      <Textbox Name="PlaceholderHdr">
+                        <CanGrow>true</CanGrow>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style />
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="LinesGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!LineNo.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>0.5cm</Top>
+            <Left>0.5cm</Left>
+            <Width>16.5cm</Width>
+          </Tablix>
+        </ReportItems>
+        <Style />
+      </Body>
+      <PageHeader>
+        <ReportItems>
+          <Textbox Name="ReportTitleBox">
+            <CanGrow>true</CanGrow>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!ReportTitle.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!Description.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>#0078d4</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.2cm</Top>
+            <Left>0.5cm</Left>
+            <Height>0.7cm</Height>
+            <Width>16cm</Width>
+            <Style />
+          </Textbox>
+          <Textbox Name="MetaBox">
+            <CanGrow>true</CanGrow>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!FileNameLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!FileName.Value, "DataSet_Result") &amp; "   |   " &amp; First(Fields!AnalysisDateLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!AnalysisDate.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                      <Color>#666666</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1cm</Top>
+            <Left>0.5cm</Left>
+            <Height>0.5cm</Height>
+            <Width>16cm</Width>
+            <Style />
+          </Textbox>
+        </ReportItems>
+        <Height>1.6cm</Height>
+        <PrintOnFirstPage>true</PrintOnFirstPage>
+        <PrintOnLastPage>true</PrintOnLastPage>
+      </PageHeader>
+      <PageFooter>
+        <ReportItems>
+          <Textbox Name="PageNumberBox">
+            <CanGrow>true</CanGrow>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Globals!PageNumber &amp; " / " &amp; Globals!TotalPages</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                      <Color>#666666</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.1cm</Top>
+            <Left>0.5cm</Left>
+            <Height>0.4cm</Height>
+            <Width>16cm</Width>
+            <Style />
+          </Textbox>
+        </ReportItems>
+        <Height>0.6cm</Height>
+        <PrintOnFirstPage>true</PrintOnFirstPage>
+        <PrintOnLastPage>true</PrintOnLastPage>
+      </PageFooter>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1.5cm</LeftMargin>
+        <RightMargin>1.5cm</RightMargin>
+        <TopMargin>1.5cm</TopMargin>
+        <BottomMargin>1.5cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Language>da-DK</Language>
+  <rd:ReportID>a1b2c3d4-e5f6-7890-abcd-ef1234567890</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="EntryNo">
+          <DataField>EntryNo</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="FileName">
+          <DataField>FileName</DataField>
+        </Field>
+        <Field Name="StatusText">
+          <DataField>StatusText</DataField>
+        </Field>
+        <Field Name="AnalysisDate">
+          <DataField>AnalysisDate</DataField>
+        </Field>
+        <Field Name="VideoSizeMB">
+          <DataField>VideoSizeMB</DataField>
+        </Field>
+        <Field Name="CreatedBy">
+          <DataField>CreatedBy</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="ReportTitle">
+          <DataField>ReportTitle</DataField>
+        </Field>
+        <Field Name="FileNameLbl">
+          <DataField>FileNameLbl</DataField>
+        </Field>
+        <Field Name="StatusLbl">
+          <DataField>StatusLbl</DataField>
+        </Field>
+        <Field Name="AnalysisDateLbl">
+          <DataField>AnalysisDateLbl</DataField>
+        </Field>
+        <Field Name="VideoSizeLbl">
+          <DataField>VideoSizeLbl</DataField>
+        </Field>
+        <Field Name="CreatedByLbl">
+          <DataField>CreatedByLbl</DataField>
+        </Field>
+        <Field Name="LineNo">
+          <DataField>LineNo</DataField>
+        </Field>
+        <Field Name="LineTypeText">
+          <DataField>LineTypeText</DataField>
+        </Field>
+        <Field Name="IsSceneChange">
+          <DataField>IsSceneChange</DataField>
+        </Field>
+        <Field Name="LineDescription">
+          <DataField>LineDescription</DataField>
+        </Field>
+        <Field Name="SequenceTime">
+          <DataField>SequenceTime</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

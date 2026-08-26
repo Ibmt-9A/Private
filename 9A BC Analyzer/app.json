@@ -1,0 +1,37 @@
+{
+  "id": "dcc135d8-161b-48f9-8f8d-a99999bfb9a2",
+  "name": "9A BC Analyzer",
+  "publisher": "9altitudes",
+  "version": "1.0.0.11",
+  "brief": "9A BC Analyzer",
+  "description": "9A BC Analyzer",
+  "privacyStatement": "https://www.9altitudes.com/app-privacy-policy",
+  "EULA": "https://www.9altitudes.com/app-terms-conditions",
+  "help": "",
+  "url": "",
+  "logo": "Media/logodetail.png",
+  "screenshots": [],
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
+  "idRanges": [
+    {
+      "from": 51000,
+      "to": 51999
+    }
+  ],
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "supportedLocales": [
+    "nl-BE"
+  ],
+  "dependencies": [
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "15.0"
+}

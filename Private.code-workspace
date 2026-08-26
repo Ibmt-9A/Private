@@ -5,6 +5,9 @@
         },
         {
             "path": "9A Update Blocker"
+        },
+        {
+            "path": "9A BC Analyzer"
         }
     ],
     "settings": {
@@ -13,6 +16,7 @@
         ],
         "alSchema.symbolsPaths": [
             ".alpackages"
-        ]
+        ],
+        "powershell.cwd": "9A BC Analyzer"
     }
 }
