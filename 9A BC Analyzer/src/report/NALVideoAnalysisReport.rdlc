@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSources>
-    <DataSource Name="DataSet_Result">
+    <DataSource Name="DataSource">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
@@ -12,6 +12,51 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="ReportTitleBox">
+            <CanGrow>true</CanGrow>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!ReportTitle.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!Description.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>#0078d4</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0cm</Top>
+            <Left>0.5cm</Left>
+            <Height>0.8cm</Height>
+            <Width>16.5cm</Width>
+            <Style />
+          </Textbox>
+          <Textbox Name="MetaBox">
+            <CanGrow>true</CanGrow>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!FileNameLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!FileName.Value, "DataSet_Result") &amp; "   |   " &amp; First(Fields!AnalysisDateLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!AnalysisDate.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                      <Color>#666666</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.8cm</Top>
+            <Left>0.5cm</Left>
+            <Height>0.5cm</Height>
+            <Width>16.5cm</Width>
+            <Style />
+          </Textbox>
           <Tablix Name="MainTable">
             <TablixBody>
               <TablixColumns>
@@ -41,16 +86,15 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <BackgroundColor>#0078d4</BackgroundColor>
-                            <Padding>
-                              <Left>4pt</Left>
-                              <Right>4pt</Right>
-                              <Top>2pt</Top>
-                              <Bottom>2pt</Bottom>
-                            </Padding>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -70,16 +114,15 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <BackgroundColor>#0078d4</BackgroundColor>
-                            <Padding>
-                              <Left>4pt</Left>
-                              <Right>4pt</Right>
-                              <Top>2pt</Top>
-                              <Bottom>2pt</Bottom>
-                            </Padding>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -103,22 +146,15 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <BackgroundColor>=IIF(Fields!IsSceneChange.Value,"#fff3cd","White")</BackgroundColor>
-                            <Padding>
-                              <Left>4pt</Left>
-                              <Right>4pt</Right>
-                              <Top>2pt</Top>
-                              <Bottom>2pt</Bottom>
-                            </Padding>
-                            <Border>
-                              <Bottom>
-                                <Style>Solid</Style>
-                                <Color>#e0e0e0</Color>
-                              </Bottom>
-                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -138,22 +174,15 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <BackgroundColor>=IIF(Fields!IsSceneChange.Value,"#fff3cd","White")</BackgroundColor>
-                            <Padding>
-                              <Left>4pt</Left>
-                              <Right>4pt</Right>
-                              <Top>2pt</Top>
-                              <Bottom>2pt</Bottom>
-                            </Padding>
-                            <Border>
-                              <Bottom>
-                                <Style>Solid</Style>
-                                <Color>#e0e0e0</Color>
-                              </Bottom>
-                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -171,125 +200,62 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <TablixHeader>
-                    <Size>0cm</Size>
-                    <CellContents>
-                      <Textbox Name="PlaceholderHdr">
-                        <CanGrow>true</CanGrow>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value />
-                                <Style />
-                              </TextRun>
-                            </TextRuns>
-                          </Paragraph>
-                        </Paragraphs>
-                        <Style />
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="LinesGroup">
-                    <GroupExpressions>
-                      <GroupExpression>=Fields!LineNo.Value</GroupExpression>
-                    </GroupExpressions>
-                  </Group>
+                  <Group Name="Details" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.5cm</Top>
+            <Top>1.6cm</Top>
             <Left>0.5cm</Left>
+            <Height>1.2cm</Height>
             <Width>16.5cm</Width>
+            <Style />
           </Tablix>
         </ReportItems>
+        <Height>3cm</Height>
         <Style />
       </Body>
-      <PageHeader>
-        <ReportItems>
-          <Textbox Name="ReportTitleBox">
-            <CanGrow>true</CanGrow>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=First(Fields!ReportTitle.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!Description.Value, "DataSet_Result")</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>#0078d4</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-              </Paragraph>
-            </Paragraphs>
-            <Top>0.2cm</Top>
-            <Left>0.5cm</Left>
-            <Height>0.7cm</Height>
-            <Width>16cm</Width>
-            <Style />
-          </Textbox>
-          <Textbox Name="MetaBox">
-            <CanGrow>true</CanGrow>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=First(Fields!FileNameLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!FileName.Value, "DataSet_Result") &amp; "   |   " &amp; First(Fields!AnalysisDateLbl.Value, "DataSet_Result") &amp; ": " &amp; First(Fields!AnalysisDate.Value, "DataSet_Result")</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <Color>#666666</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-              </Paragraph>
-            </Paragraphs>
-            <Top>1cm</Top>
-            <Left>0.5cm</Left>
-            <Height>0.5cm</Height>
-            <Width>16cm</Width>
-            <Style />
-          </Textbox>
-        </ReportItems>
-        <Height>1.6cm</Height>
-        <PrintOnFirstPage>true</PrintOnFirstPage>
-        <PrintOnLastPage>true</PrintOnLastPage>
-      </PageHeader>
-      <PageFooter>
-        <ReportItems>
-          <Textbox Name="PageNumberBox">
-            <CanGrow>true</CanGrow>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Globals!PageNumber &amp; " / " &amp; Globals!TotalPages</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <Color>#666666</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <Top>0.1cm</Top>
-            <Left>0.5cm</Left>
-            <Height>0.4cm</Height>
-            <Width>16cm</Width>
-            <Style />
-          </Textbox>
-        </ReportItems>
-        <Height>0.6cm</Height>
-        <PrintOnFirstPage>true</PrintOnFirstPage>
-        <PrintOnLastPage>true</PrintOnLastPage>
-      </PageFooter>
+      <Width>17.5cm</Width>
       <Page>
+        <PageFooter>
+          <Height>0.6cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="PageNumberBox">
+              <CanGrow>true</CanGrow>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber &amp; " / " &amp; Globals!TotalPages</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <Color>#666666</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.1cm</Top>
+              <Left>0.5cm</Left>
+              <Height>0.4cm</Height>
+              <Width>16cm</Width>
+              <Style />
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>1.5cm</LeftMargin>
