@@ -132,4 +132,158 @@ codeunit 50100 TaskletSubscriber
 
         _IsHandled := true;
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB Application Configuration", 'OnGetApplicationConfiguration_OnAddTweaks', '', true, true)]
+    local procedure OnGetApplicationConfiguration_OnAddTweaks(var _MobTweakContainer: Codeunit "MOB Tweak Container")
+    var
+        Tweak: Text;
+    begin
+        Clear(Tweak);
+        //ReceiveLines action menu - add new action
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                    <application>
+                      <pages>
+                        <page id="ReceiveLines" type="OrderLines" icon="mainmenureceive">
+                          <actions>
+                            <!-- Custom -->
+                            <open icon="mainmenuprint" id="MyUnplanned2" title="Necas print" tweak="Append">
+                              <returnTransfer property="UnplannedItemRegistrationCompleted" to="RefreshOnResume"/>
+                            </open>
+                            <!-- Custom --> 
+                          </actions>
+                        </page>
+                      </pages>
+                    </application>';
+        _MobTweakContainer.Add(1000, 'Page: ReceiveLines_Actionmenu', Tweak);
+
+        //Production Consumption action menu - add new action
+        Clear(Tweak);
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                <pages>
+                    <page id="ProdConsumptionLines" type="OrderLines" icon="productionConsumption">
+                        <actions>
+                        <!-- Custom -->
+                        <open id="ItemLedger" icon="mainmenulocateitem" title="Item Ledger"  tweak="Append"/>
+                        <!-- Custom --> 
+                        </actions>
+                    </page>
+                </pages>
+                </application>';
+        _MobTweakContainer.Add(2000, 'Page: ProdConsumptionLines_Actionmenu', Tweak);
+
+        //Item Ledger lookup page - create new lookup page
+        Clear(Tweak);
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                    <pages>        
+                        <page id="ItemLedger" type="Lookup" icon="stopwatch" tweak="Append">
+                        <title defaultValue="Item Ledger"/>
+                        <lookupConfiguration type="ItemLedger" useRegistrationCollector="false">
+                            <header configurationKey="ItemLedgerHeader" automaticAcceptOnOpen="true" hideAfterAccept="true"/>
+                            <onResultSelected enabled="true" navigateTo="null"/>
+                            <list listId="LookupItemLedger"/>
+                        </lookupConfiguration>
+                        </page>
+                    </pages>
+                </application>';
+        _MobTweakContainer.Add(3000, 'Page: ItemLedger_Actionmenu', Tweak);
+
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                  <resources theme="Tasklet">
+                    <lists useSingleSelectionDefault="false">
+                      <listConfiguration id="LookupItemLedger" tweak="append">
+                        <columns>
+                            <column width="65" xAlign="left" yAlign="top">
+                                <elements>
+                                    <textElement fontId="headlineFont" text="{DisplayLine1}"/>
+                                    <textElement fontId="contentFont" text="{DisplayLine2}"/>
+                                    <textElement fontId="contentFont" text="{DisplayLine3}"/>
+                                    <textElement fontId="contentFont" text="{DisplayLine4}"/>
+                                    <textElement fontId="contentFont" text="{DisplayLine5}"/>
+                                    <textElement fontId="contentFont" text="{DisplayLotNumber} {DisplaySerialNumber} {DisplayExpirationDate}" dataMember="DisplayTrackingFeatureIsEnabled">
+                                    <values>
+                                    <value if="equals" dataMemberValue="true" text="{DisplayTracking} {DisplayExpirationDate}"/>
+                                    </values>
+                                    </textElement>
+                                </elements>
+                            </column>
+                            <column width="35" xAlign="right" yAlign="top">
+                                <elements>
+                                    <textElement fontId="headlineFont" text="{Quantity}" horizontalAlignment="right"/>
+                                </elements>
+                            </column>
+                         </columns>
+                      </listConfiguration>
+                    </lists>
+                  </resources>
+                </application>';
+        _MobTweakContainer.Add(4000, 'ItemLeder list', Tweak);
+
+        //MyUnplanned2 action menu - add new action
+        Clear(Tweak);
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                    <pages>        
+                        <page id="MyUnplanned2" type="UnplannedItemRegistration" tweak="Append">
+                        <title defaultValue="Labels to print"/>
+                        <unplannedItemRegistrationConfiguration type="MyUnplanned2" useRegistrationCollector="true">
+                            <header configurationKey="LabelFilters" automaticAcceptOnOpen="true"/>
+                        </unplannedItemRegistrationConfiguration>
+                        </page>
+                    </pages>
+                </application>';
+        _MobTweakContainer.Add(5000, 'Page: MyUnplanned2_Actionmenu', Tweak);
+
+        //Registration Collector - auto forward after lot number scan - disable auto forward
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                    <resources theme="Tasklet">
+                        <workflows>
+                            <workflow id="standard" tweak="Replace" itemNumberAI="01,02,91">
+                                <configuration scanBehaviourWhenRegisteringQuantity="ValidateCurrentItem">
+                                    <steps>
+                                        <fromBin id="10" header="@{RegistrationCollectorFromBinHeader}" label="{FromBin}" defaultValue="{FromBin}" helpLabel="@{RegistrationCollectorFromBinHelpLabel}" eanAi="00" autoForwardAfterScan="false"/>
+                                        <toBin id="20" header="@{RegistrationCollectorToBinHeader}" label="{ToBin}" defaultValue="{ToBin}" helpLabel="@{RegistrationCollectorToBinHelpLabel}" eanAi="00" autoForwardAfterScan="false"/>
+                                        <expirationDate id="31" header="@{RegistrationCollectorExpirationDateHeader}" label="" defaultValue="{ExpirationDate}" helpLabel="@{RegistrationCollectorExpirationDateHelpLabel}" eanAi="15,17,12"/>
+                                        <lotNumber id="32" header="@{RegistrationCollectorLotNumberHeader}" defaultValue="{LotNumber}" helpLabel="@{RegistrationCollectorLotNumberHelpLabel}" eanAi="10" autoForwardAfterScan="false"/>
+                                        <tote id="35" header="@{RegistrationCollectorToteHeader}" helpLabel="@{RegistrationCollectorToteHelpLabel}" eanAi="98"/>
+                                        <!-- id="37" reserved for PackageNumber -->
+                                        <serialNumber id="40" header="@{RegistrationCollectorSerialNumberHeader}" defaultValue="{SerialNumber}" helpLabel="@{RegistrationCollectorSerialNumberHelpLabel}" eanAi="21"/>
+                                        <quantity id="50" header="@{RegistrationCollectorQuantityHeader}" helpLabel="@{RegistrationCollectorQuantityHelpLabel}" eanAi="310,30,37" minValue="0.0000000001" autoForwardAfterScan="false"/>
+                                        <quantityByScan id="51" header="@{RegistrationCollectorQuantityByScanHeader}" helpLabel="@{RegistrationCollectorQuantityByScanHelpLabel}" minValue="0.0000000001" autoForwardAfterScan="false"/>
+                                    </steps>
+                                </configuration>
+                            </workflow>
+                        </workflows>
+                    </resources>
+                </application>';
+        _MobTweakContainer.Add(6000, 'workflows: Standard_LotNumber_autoForwardAfterScan', Tweak);
+
+        //Registration Collector - auto forward after lot number scan - disable auto forward
+        Tweak := @'<?xml version="1.0" encoding="utf-8"?>
+                <application>
+                    <resources theme="Tasklet">
+                        <workflows>
+                            <workflow id="productionWorkflow" tweak="Replace" itemNumberAI="01,02,91">
+                                <configuration scanBehaviourWhenRegisteringQuantity="ValidateCurrentItem">
+                                <steps>
+                                    <fromBin id="10" header="@{RegistrationCollectorFromBinHeader}" label="{FromBin}" defaultValue="{FromBin}" helpLabel="@{RegistrationCollectorFromBinHelpLabel}" eanAi="00" autoForwardAfterScan="false"/>
+                                    <toBin id="20" header="@{RegistrationCollectorToBinHeader}" label="{ToBin}" defaultValue="{ToBin}" helpLabel="@{RegistrationCollectorToBinHelpLabel}" eanAi="00" autoForwardAfterScan="false"/>
+                                    <expirationDate id="31" header="@{RegistrationCollectorExpirationDateHeader}" label="" helpLabel="@{RegistrationCollectorExpirationDateHelpLabel}" eanAi="15,17,12"/>
+                                    <lotNumber id="32" header="@{RegistrationCollectorLotNumberHeader}" defaultValue="{LotNumber}" helpLabel="@{RegistrationCollectorLotNumberHelpLabel}" eanAi="10" autoForwardAfterScan="false"/>
+                                    <tote id="35" header="@{RegistrationCollectorToteHeader}" helpLabel="@{RegistrationCollectorToteHelpLabel}" eanAi="98"/>
+                                    <!-- id="37" reserved for PackageNumber -->
+                                    <serialNumber id="40" header="@{RegistrationCollectorSerialNumberHeader}" defaultValue="{SerialNumber}" helpLabel="@{RegistrationCollectorSerialNumberHelpLabel}" eanAi="21"/>
+                                    <quantity id="50" header="@{RegistrationCollectorQuantityHeader}" helpLabel="@{RegistrationCollectorQuantityHelpLabel}" eanAi="310,30,37" minValue="-99999999999" autoForwardAfterScan="false"/>
+                                    <quantityByScan id="51" header="@{RegistrationCollectorQuantityByScanHeader}" helpLabel="@{RegistrationCollectorQuantityByScanHelpLabel}" minValue="0.0000000001" autoForwardAfterScan="false"/>
+                                </steps>
+                                </configuration>
+                            </workflow>
+                        </workflows>
+                    </resources>
+                </application>';
+        _MobTweakContainer.Add(7000, 'workflows: Production_LotNumber_autoForwardAfterScan', Tweak);
+    end;    
 }
