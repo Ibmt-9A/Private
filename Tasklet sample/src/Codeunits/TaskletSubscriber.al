@@ -1,6 +1,137 @@
 codeunit 50100 TaskletSubscriber
 {
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB Application Configuration", 'OnGetApplicationConfiguration_OnAddTweaks', '', true, true)]
+    local procedure OnGetApplicationConfiguration_OnAddTweaks(var _MobTweakContainer: Codeunit "MOB Tweak Container")
+    var
+        Tweak: Text;
+    begin
+        Clear(Tweak);
+        //MyUnplanned page - add new unplanned item registration page
+        Tweak :=
+            '<?xml version="1.0" encoding="utf-8"?>' +
+            '<application xmlns="http://schemas.taskletfactory.com/MobileWMS/Application" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.taskletfactory.com/MobileWMS/Application http://schemas.taskletfactory.com/MobileWMS/Application.xsd">' +
+            '  <pages>' +
+            '    <page id="MyUnplanned" type="UnplannedItemRegistration" icon="mainmenusettings" tweak="Append">' +
+            '      <title defaultValue="@{MY_UNPLANNED_1_TITLE}" />' +
+            '      <unplannedItemRegistrationConfiguration type="MyUnplanned" useRegistrationCollector="true">' +
+            '        <header configurationKey="MyUnplanned" automaticAcceptOnOpen="false" clearAfterPost="true" />' +
+            '      </unplannedItemRegistrationConfiguration>' +
+            '    </page>' +
+            '    <page id="MainMenu">' +
+            '      <menuConfiguration>' +
+            '        <menuItems>' +
+            '          <menuItem id="MyUnplanned" displayName="@{MY_UNPLANNED_1_MENU}" icon="mainmenusettings" tweak="Append" />' +
+            '        </menuItems>' +
+            '      </menuConfiguration>' +
+            '    </page>' +
+            '  </pages>' +
+            '</application>';
+        _MobTweakContainer.Add(1000, 'Page: MyUnplanned', Tweak);
+    end;
 
+    // Step 2: Define Header and headerFields
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Reference Data", 'OnGetReferenceData_OnAddHeaderConfigurations', '', true, true)]
+    local procedure MyGetReferenceData_OnAddHeaderConfigurations(var _HeaderFields: Record "MOB HeaderField Element")
+    begin
+        _HeaderFields.InitConfigurationKey('MyUnplanned'); // Identifier for new Header - replace by your own name
+
+        // Add Header fields here
+        _HeaderFields.Create_DateField(10, 'MyDate', 'Select date');
+
+        _HeaderFields.Create_TextField(20, 'MyText', 'Enter text');
+        _HeaderFields.Set_optional(true);
+
+        _HeaderFields.Create_DecimalField(30, 'MyDecimal', 'Enter decimal');
+    end;
+
+    // Step 3: Define Steps (optional)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnGetRegistrationConfiguration_OnAddSteps', '', true, true)]
+    local procedure MyOnGetRegistrationConfiguration_OnAddSteps(_RegistrationType: Text; var _HeaderFieldValues: Record "MOB NS Request Element"; var _Steps: Record "MOB Steps Element"; var _RegistrationTypeTracking: Text)
+    var
+        MyDate: Date;
+        MyText: Text;
+        MyDecimal: Decimal;
+    begin
+        // Handle only your own Header name
+        if _RegistrationType <> 'MyUnplanned' then
+            exit;
+
+        // Read the headerFields
+        MyDate := _HeaderFieldValues.GetValueAsDate('MyDate');
+        MyText := _HeaderFieldValues.GetValue('MyText');
+        MyDecimal := _HeaderFieldValues.GetValueAsDecimal('MyDecimal');
+
+        // Add steps
+        // For illustration, re-use the headerField value as default values on the steps
+        _Steps.Create_DateStep(10, 'MyDateStep');
+        _Steps.Set_header('MyDateStep');
+        _Steps.Set_defaultValue(MyDate);
+
+        _Steps.Create_TextStep(20, 'MyTextStep');
+        _Steps.Set_defaultValue(MyText);
+        _Steps.Set_header('MyTextStep');
+
+        _Steps.Create_DecimalStep(30, 'MyDecimalStep');
+        _Steps.Set_defaultValue(MyDecimal);
+        _Steps.Set_header('MyDecimalStep');
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnPostAdhocRegistrationOnCustomRegistrationType', '', true, true)]
+    local procedure MyOnPostAdhocRegistrationOnCustomRegistrationType(_RegistrationType: Text; var _RequestValues: Record "MOB NS Request Element"; var _CurrentRegistrations: Record "MOB WMS Registration"; var _SuccessMessage: Text; var _RegistrationTypeTracking: Text; var _IsHandled: Boolean)
+    var
+        MyDate: Date;
+        MyText: Text;
+        MyDecimal: Decimal;
+    begin
+        if _RegistrationType <> 'MyUnplanned' then
+            exit;
+
+        if _IsHandled then
+            exit;
+
+        // Read _RequestValues
+        MyDate := _RequestValues.GetValueAsDate('MyDateStep');
+        MyText := _RequestValues.GetValue('MyTextStep');
+        MyDecimal := _RequestValues.GetValueAsDecimal('MyDecimalStep');
+
+        _SuccessMessage := StrSubstNo('Success %1 %2 %3', MyDate, MyText, MyDecimal);
+        _RegistrationTypeTracking := 'Tracking info for the Document queue.';
+
+        _IsHandled := true;
+    end;
+
+    /*
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Receive", 'OnGetReceiveOrderLines_OnAddStepsToAnyHeader', '', false, false)]
+    local procedure "MOB WMS Receive_OnGetReceiveOrderLines_OnAddStepsToAnyHeader"(_RecRef: RecordRef; var _StepsElement: Record "MOB Steps Element")
+    begin
+        AddMyPostingDateStep(_StepsElement);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Receive", 'OnPostReceiveOrder_OnBeforePostPurchaseOrder', '', false, false)]
+    local procedure "MOB WMS Receive_OnPostReceiveOrder_OnBeforePostPurchaseOrder"(var _OrderValues: Record "MOB Common Element"; var _PurchHeader: Record "Purchase Header")
+    var
+        TempOrderValues: Record "MOB Common Element" temporary;
+        MobRequestMgt: Codeunit "MOB NS Request Management";
+        MyPostingDate: Date;
+    begin
+        MyPostingDate := _OrderValues.GetValueAsDate('MyPostingDateStep', false);
+        // MobRequestMgt.GetOrderValues(_OrderValues.SystemId, TempOrderValues);
+        // MyPostingDate := TempOrderValues.GetValueAsDate('MyPostingDateStep', false);
+
+        if MyPostingDate <> 0D then
+            _PurchHeader.Validate("Posting Date", MyPostingDate);
+
+        _PurchHeader."Assigned User ID" := CopyStr(UserId(), 1, MaxStrLen(_PurchHeader."Assigned User ID"));
+    end;
+
+    local procedure AddMyPostingDateStep(var _Steps: Record "MOB Steps Element")
+    begin
+        _Steps.Create_DateStep(10000, 'MyPostingDateStep');
+        _Steps.Set_header('Posting Date');
+        _Steps.Set_defaultValue(Today());
+        // _Steps.Set_minDate(Today() - 1);
+        // _Steps.Set_maxDate(Today());
+    end;
     //New Line Step Pick
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Pick", 'OnGetPickOrderLines_OnAddStepsToAnyLine', '', true, true)]
@@ -285,5 +416,6 @@ codeunit 50100 TaskletSubscriber
                     </resources>
                 </application>';
         _MobTweakContainer.Add(7000, 'workflows: Production_LotNumber_autoForwardAfterScan', Tweak);
-    end;    
+    end;
+    */
 }
