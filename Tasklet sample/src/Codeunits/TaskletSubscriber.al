@@ -89,13 +89,13 @@ codeunit 50100 TaskletSubscriber
         if _IsHandled then
             exit;
 
-        // Read _RequestValues
+        // Read _RequestValues
         MyDate := _RequestValues.GetValueAsDate('MyDateStep');
         MyText := _RequestValues.GetValue('MyTextStep');
         MyDecimal := _RequestValues.GetValueAsDecimal('MyDecimalStep');
 
-        _SuccessMessage := StrSubstNo('Success %1 %2 %3', MyDate, MyText, MyDecimal);
-        _RegistrationTypeTracking := 'Tracking info for the Document queue.';
+        _SuccessMessage := StrSubstNo('Success %1 %2 %3', MyDate, MyText, MyDecimal);
+        _RegistrationTypeTracking := 'Tracking info for the Document queue.';
 
         _IsHandled := true;
     end;
