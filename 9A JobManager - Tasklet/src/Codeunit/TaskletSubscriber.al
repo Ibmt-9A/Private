@@ -35,8 +35,8 @@ codeunit 50100 TaskletSubscriber
         _HeaderFields.Create_TextField(20, 'JobType', 'Type (IPO, SAG or Production)');
         _HeaderFields.Create_TextField(30, 'JobNo', 'Job number');
         _HeaderFields.Create_ListField(40, 'FinishJobRegistration', 'Afslut job');
-        _HeaderFields.Set_listValues('Ja;Nej');
-        _HeaderFields.Set_defaultValue('Nej');
+        _HeaderFields.Set_listValues('true:Ja;false:Nej');
+        _HeaderFields.Set_defaultValue('false');
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnGetRegistrationConfiguration_OnAddSteps', '', true, true)]
@@ -51,6 +51,7 @@ codeunit 50100 TaskletSubscriber
     local procedure OnPostAdhocRegistrationOnCustomRegistrationType(_RegistrationType: Text; var _RequestValues: Record "MOB NS Request Element"; var _CurrentRegistrations: Record "MOB WMS Registration"; var _SuccessMessage: Text; var _RegistrationTypeTracking: Text; var _IsHandled: Boolean)
     var
         JobManEmployee: Record JobManEmployee;
+        JobManJob: Record JobManJob;
         JobManJobBundle: Codeunit JobManJobBundle;
         TmpJobManBundleLine: Record JobManBundleLine temporary;
         EmployeeNo: Code[20];
@@ -80,9 +81,16 @@ codeunit 50100 TaskletSubscriber
             Error(EmployeeNotActiveLbl, EmployeeNo);
         end;
 
+        // Find JobManJob record (kan angives med enten JobNo eller RefNo/Prod.ordrenr.)
+        if not JobManJob.Get(JobNo) then begin
+            JobManJob.SetRange(RefNo, JobNo);
+            if not JobManJob.FindFirst() then begin
+                Error(JobNotFoundLbl, JobNo);
+            end;
+        end;
+
         // Tjek om medarbejderen har aktive job
         JobManJobBundle.Init(EmployeeNo);
-        JobManJobBundle._ActiveJobsLoad();
         JobManJobBundle.GetTmpJobManBundleLine(TmpJobManBundleLine);
 
         if not TmpJobManBundleLine.IsEmpty() then begin
@@ -90,7 +98,7 @@ codeunit 50100 TaskletSubscriber
             IsSameJobActive := false;
             if TmpJobManBundleLine.FindSet() then begin
                 repeat
-                    if TmpJobManBundleLine.JobNo = JobNo then begin
+                    if (TmpJobManBundleLine.JobNo = JobNo) or (TmpJobManBundleLine.JobNo = JobManJob.JobNo) then begin
                         IsSameJobActive := true;
                     end;
                 until TmpJobManBundleLine.Next() = 0;
@@ -105,6 +113,7 @@ codeunit 50100 TaskletSubscriber
             end;
 
             JobManJobBundle._ActiveJobsStop();
+            JobManJobBundle.MakeRegistrations(); // Poster stoppet i databasen
 
             if IsSameJobActive then begin
                 if FinishJobRegistration then begin
@@ -118,7 +127,7 @@ codeunit 50100 TaskletSubscriber
         end;
 
         // Hvis man ikke var på noget job, eller hvis man bippede et nyt job (og dermed stoppede det gamle):
-        RegisterJob(EmployeeNo, JobType, JobNo);
+        RegisterJob(EmployeeNo, JobType, JobManJob.JobNo);
         _SuccessMessage := RegistrationCreatedLbl;
         _IsHandled := true;
     end;
@@ -140,7 +149,10 @@ codeunit 50100 TaskletSubscriber
         end;
 
         if not JobManJob.Get(JobNo) then begin
-            Error(JobNotFoundLbl, JobNo);
+            JobManJob.SetRange(RefNo, JobNo);
+            if not JobManJob.FindFirst() then begin
+                Error(JobNotFoundLbl, JobNo);
+            end;
         end;
 
         JobManMakeRegistration.Init(EmployeeNo, CurrentDateTime(), Today(), CurrentDateTime(), 0);
@@ -152,7 +164,7 @@ codeunit 50100 TaskletSubscriber
                         Error(JobTypeMismatchLbl, JobNo, JobType);
                     end;
 
-                    if not JobManIpcActivity.Find_JobNo(JobNo) then begin
+                    if not JobManIpcActivity.Find_JobNo(JobManJob.JobNo) then begin
                         Error(IpcActivityNotFoundLbl, JobNo);
                     end;
 
