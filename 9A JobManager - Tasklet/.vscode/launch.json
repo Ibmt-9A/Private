@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "DEV",
+            "tenant": "28741738-fa5a-4173-955b-b224f09bcdf8",
+            "environmentType": "Sandbox",
+            "environmentName": "DEV",            
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": false,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            
+            //"schemaUpdateMode": "Synchronize"
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "TEST",
+            "tenant": "28741738-fa5a-4173-955b-b224f09bcdf8",
+            "environmentType": "Sandbox",
+            "environmentName": "TEST",            
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": false,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            
+            "schemaUpdateMode": "Synchronize"
+            //"schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "snapshotInitialize: Production",
+            "type": "al",
+            "tenant": "28741738-fa5a-4173-955b-b224f09bcdf8",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "Drift",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile",
+            "snapshotVerbosity": "Full",
+            "userId": "OE"            
+        }        
+    ]
+}

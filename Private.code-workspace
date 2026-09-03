@@ -11,6 +11,9 @@
         },
         {
             "path": "Tasklet sample"
+        },
+        {
+            "path": "9A JobManager - Tasklet"
         }
     ],
     "settings": {

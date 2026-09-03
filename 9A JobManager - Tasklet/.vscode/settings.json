@@ -1,0 +1,8 @@
+{
+    "alSchema.sourcePaths": [
+        "."
+    ],
+    "alSchema.symbolsPaths": [
+        ".alpackages"
+    ]
+}
