@@ -52,7 +52,7 @@ codeunit 50100 TaskletSubscriber
     var
         JobManEmployee: Record JobManEmployee;
         JobManJobBundle: Codeunit JobManJobBundle;
-        TmpJobManBundleLine: Record JobManBundleLine;
+        TmpJobManBundleLine: Record JobManBundleLine temporary;
         EmployeeNo: Code[20];
         JobType: Text;
         JobNo: Code[20];
