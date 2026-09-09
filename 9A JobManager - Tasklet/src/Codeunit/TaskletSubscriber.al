@@ -10,15 +10,15 @@ codeunit 50100 TaskletSubscriber
             '<application xmlns="http://schemas.taskletfactory.com/MobileWMS/Application">' +
             '  <pages>' +
             '    <page id="JobRegistration" type="UnplannedItemRegistration" icon="stopwatch" tweak="Append">' +
-            '      <title defaultValue="Job registration" />' +
-            '      <unplannedItemRegistrationConfiguration type="JobRegistration" useRegistrationCollector="false">' +
+            '      <title defaultValue="@{JobRegistration}" />' +
+            '      <unplannedItemRegistrationConfiguration type="JobRegistration" useRegistrationCollector="true">' +
             '        <header configurationKey="JobRegistration" automaticAcceptOnOpen="true" clearAfterPost="true" />' +
             '      </unplannedItemRegistrationConfiguration>' +
             '    </page>' +
             '    <page id="MainMenu">' +
             '      <menuConfiguration>' +
             '        <menuItems>' +
-            '          <menuItem id="JobRegistration" displayName="Job registration" icon="stopwatch" tweak="Append" />' +
+            '          <menuItem id="JobRegistration" displayName="@{JobRegistration}" icon="stopwatch" tweak="Append" />' +
             '        </menuItems>' +
             '      </menuConfiguration>' +
             '    </page>' +
@@ -27,24 +27,57 @@ codeunit 50100 TaskletSubscriber
         _MobTweakContainer.Add(1000, 'Page: JobRegistration', Tweak);
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Language", 'OnAddMessages', '', true, true)]
+    local procedure OnAddMessages(_LanguageCode: Code[10]; var _Messages: Record "MOB Message")
+    var
+        MOBMenuOption: Record "MOB Menu Option";
+    begin
+
+        // Create MOB Menu Option JobRegistration
+        MOBMenuOption.Init();
+        MOBMenuOption."Menu Option" := 'JobRegistration';
+        If MOBMenuOption.Insert(True) then begin end;
+
+        // Create English translation for my custom mobile message
+        if _LanguageCode = 'ENU' then begin
+            _Messages.Create('ENU', 'JobRegistration', 'Job Registration');
+            _Messages.Create('ENU', 'EmployeeNo', 'Employee No.');
+            _Messages.Create('ENU', 'JobNo', 'Job No.');
+            _Messages.Create('ENU', 'ScanJobno', 'Scan Job no.');
+        end;
+
+        // Create Danish translation for my custom mobile message
+        if _LanguageCode = 'DAN' then begin
+            _Messages.Create('DAN', 'JobRegistration', 'Job registrering');
+            _Messages.Create('DAN', 'EmployeeNo', 'Medarbejder nr.');
+            _Messages.Create('DAN', 'ScanJobno', 'Scan Job nr.');
+        end;
+
+    end;
+
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Reference Data", 'OnGetReferenceData_OnAddHeaderConfigurations', '', true, true)]
     local procedure OnGetReferenceData_OnAddHeaderConfigurations(var _HeaderFields: Record "MOB HeaderField Element")
     begin
         _HeaderFields.InitConfigurationKey('JobRegistration');
-        _HeaderFields.Create_TextField(10, 'EmployeeNo', 'Employee');
-        _HeaderFields.Create_TextField(20, 'JobType', 'Type (IPO, SAG or Production)');
-        _HeaderFields.Create_TextField(30, 'JobNo', 'Job number');
-        _HeaderFields.Create_ListField(40, 'FinishJobRegistration', 'Afslut job');
-        _HeaderFields.Set_listValues('true:Ja;false:Nej');
-        _HeaderFields.Set_defaultValue('false');
+        _HeaderFields.Create_TextField(10, 'EmployeeNo', '@{EmployeeNo}');
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnGetRegistrationConfiguration_OnAddSteps', '', true, true)]
     local procedure OnGetRegistrationConfiguration_OnAddSteps(_RegistrationType: Text; var _HeaderFieldValues: Record "MOB NS Request Element"; var _Steps: Record "MOB Steps Element"; var _RegistrationTypeTracking: Text)
+    var
+        EmployeeNo: Code[20];
     begin
         if _RegistrationType <> 'JobRegistration' then begin
             exit;
         end;
+
+        EmployeeNo := CopyStr(_HeaderFieldValues.GetValue('EmployeeNo'), 1, MaxStrLen(EmployeeNo));
+
+        CreateTextStep(_Steps, 10, 'JobNo', '@{JobNo}', '@{ScanJobno}');
+        if EmployeeHasActiveProdJobs(EmployeeNo) then begin
+            CreateFinishJobStep(_Steps);
+        end;
+
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnPostAdhocRegistrationOnCustomRegistrationType', '', true, true)]
@@ -52,12 +85,11 @@ codeunit 50100 TaskletSubscriber
     var
         JobManEmployee: Record JobManEmployee;
         JobManJob: Record JobManJob;
-        JobManJobBundle: Codeunit JobManJobBundle;
-        TmpJobManBundleLine: Record JobManBundleLine temporary;
+        JobManApiRegistration: Codeunit JobManApiRegistration;
+        ActiveJobs: Record JobManStampJournalLine;
         EmployeeNo: Code[20];
-        JobType: Text;
         JobNo: Code[20];
-        FinishJobRegistration: Boolean;
+        FinishJobRegistration: Text[20];
         IsSameJobActive: Boolean;
     begin
         if _RegistrationType <> 'JobRegistration' then begin
@@ -69,9 +101,8 @@ codeunit 50100 TaskletSubscriber
         end;
 
         EmployeeNo := CopyStr(_RequestValues.GetValue('EmployeeNo'), 1, MaxStrLen(EmployeeNo));
-        JobType := UpperCase(_RequestValues.GetValue('JobType'));
         JobNo := CopyStr(_RequestValues.GetValue('JobNo'), 1, MaxStrLen(JobNo));
-        FinishJobRegistration := _RequestValues.GetValueAsBoolean('FinishJobRegistration');
+        FinishJobRegistration := _RequestValues.GetValue('FinishJobRegistration');
 
         if not JobManEmployee.Get(EmployeeNo) then begin
             Error(EmployeeNotFoundLbl, EmployeeNo);
@@ -82,6 +113,7 @@ codeunit 50100 TaskletSubscriber
         end;
 
         // Find JobManJob record (kan angives med enten JobNo eller RefNo/Prod.ordrenr.)
+        JobManJob.Reset();
         if not JobManJob.Get(JobNo) then begin
             JobManJob.SetRange(RefNo, JobNo);
             if not JobManJob.FindFirst() then begin
@@ -90,110 +122,109 @@ codeunit 50100 TaskletSubscriber
         end;
 
         // Tjek om medarbejderen har aktive job
-        JobManJobBundle.Init(EmployeeNo);
-        JobManJobBundle.GetTmpJobManBundleLine(TmpJobManBundleLine);
+        GetActiveJobs(EmployeeNo, ActiveJobs);
+        if ActiveJobs.FindSet(false) then begin
+            IsSameJobActive := IsSameJobActive(EmployeeNo, JobManJob, JobNo);
 
-        if not TmpJobManBundleLine.IsEmpty() then begin
-            // Undersøg om det scannede job allerede er aktivt
-            IsSameJobActive := false;
-            if TmpJobManBundleLine.FindSet() then begin
-                repeat
-                    if (TmpJobManBundleLine.JobNo = JobNo) or (TmpJobManBundleLine.JobNo = JobManJob.JobNo) then begin
-                        IsSameJobActive := true;
-                    end;
-                until TmpJobManBundleLine.Next() = 0;
-            end;
-
-            // Stop det aktuelt aktive job
-            JobManJobBundle.ParmAskForFeedback(false);
-            if FinishJobRegistration then begin
-                JobManJobBundle.ActiveJobsFeedbackReportFinishSetYes();
-            end else begin
-                JobManJobBundle.ActiveJobsFeedbackReportFinishSetNo();
-            end;
-
-            JobManJobBundle._ActiveJobsStop();
-            JobManJobBundle.MakeRegistrations(); // Poster stoppet i databasen
-
-            if IsSameJobActive then begin
-                if FinishJobRegistration then begin
-                    _SuccessMessage := JobFinishedLbl;
+            repeat
+                if FinishJobRegistration = 'Afslut' then begin
+                    JobManApiRegistration.JobFinish(GetApiId(), EmployeeNo, '', ActiveJobs.LineSequence);
                 end else begin
-                    _SuccessMessage := JobStoppedLbl;
+                    JobManApiRegistration.JobStop(GetApiId(), EmployeeNo, '', ActiveJobs.LineSequence);
                 end;
+            until ActiveJobs.Next() = 0;
+
+            /*
+            if IsSameJobActive then begin
+                _SuccessMessage := JobStoppedLbl;
                 _IsHandled := true;
                 exit;
             end;
+            */
         end;
 
         // Hvis man ikke var på noget job, eller hvis man bippede et nyt job (og dermed stoppede det gamle):
-        RegisterJob(EmployeeNo, JobType, JobManJob.JobNo);
+        JobManApiRegistration.JobStart(GetApiId(), EmployeeNo, '', GetTimeOffsetUTC(), JobManJob.JobNo, false);
         _SuccessMessage := RegistrationCreatedLbl;
         _IsHandled := true;
     end;
 
-    local procedure RegisterJob(EmployeeNo: Code[20]; JobType: Text; JobNo: Code[20])
+    local procedure IsSameJobActive(EmployeeNo: Code[20]; JobManJob: Record JobManJob; ScannedJobNo: Code[20]): Boolean
     var
-        JobManEmployee: Record JobManEmployee;
-        JobManJob: Record JobManJob;
-        JobManIpcActivity: Record JobManIpcActivity;
-        JobManBundleLine: Record JobManBundleLine;
-        JobManMakeRegistration: Codeunit JobManMakeRegistration;
+        ActiveJobsCheck: Record JobManStampJournalLine;
     begin
-        if not JobManEmployee.Get(EmployeeNo) then begin
-            Error(EmployeeNotFoundLbl, EmployeeNo);
+        if ActiveJobsCheck.FindActiveJobId(EmployeeNo, JobManJob.JobNo) then
+            exit(true);
+        if (JobManJob.RefNo <> '') and ActiveJobsCheck.FindActiveJobId(EmployeeNo, JobManJob.RefNo) then
+            exit(true);
+        if (ScannedJobNo <> '') and ActiveJobsCheck.FindActiveJobId(EmployeeNo, ScannedJobNo) then
+            exit(true);
+        exit(false);
+    end;
+
+    local procedure GetActiveJobs(EmployeeNo: Code[20]; var ActiveJobs: Record JobManStampJournalLine)
+    var
+        JobManJobBundle: Codeunit JobManJobBundle;
+    begin
+        ActiveJobs.Reset();
+        JobManJobBundle.Init(EmployeeNo);
+        JobManJobBundle.GetActiveJobs(ActiveJobs);
+    end;
+
+    local procedure CreateTextStep(var Steps: Record "MOB Steps Element"; StepId: Integer; StepName: Text; StepLabel: Text; StepHelpLabel: Text)
+    begin
+        Steps.InitConfigurationKey('JobRegistration');
+        Steps.Create();
+        Steps.Set_id(StepId);
+        Steps.Set_name(StepName);
+        Steps.Set_label(StepLabel);
+        Steps.Set_helpLabel(StepHelpLabel);
+        Steps.Set_inputType('Text');
+        Steps.Save();
+    end;
+
+    local procedure CreateFinishJobStep(var Steps: Record "MOB Steps Element")
+    begin
+        Steps.InitConfigurationKey('JobRegistration');
+        Steps.Create();
+        Steps.Set_id(20);
+        Steps.Set_name('FinishJobRegistration');
+        Steps.Set_label('Vil du stop tid/afslut jobbet?');
+        Steps.Set_inputType('List');
+        Steps.Set_listValues('Stop tid;Afslut');
+        Steps.Set_defaultValue('Stop tid');
+        Steps.Save();
+    end;
+
+    local procedure EmployeeHasActiveProdJobs(EmployeeNo: Code[20]): Boolean
+    var
+        ActiveJobs: Record JobManStampJournalLine;
+
+    begin
+        if EmployeeNo = '' then begin
+            exit(false);
         end;
 
-        if not JobManEmployee.IsActive(Today()) then begin
-            Error(EmployeeNotActiveLbl, EmployeeNo);
-        end;
-
-        if not JobManJob.Get(JobNo) then begin
-            JobManJob.SetRange(RefNo, JobNo);
-            if not JobManJob.FindFirst() then begin
-                Error(JobNotFoundLbl, JobNo);
-            end;
-        end;
-
-        JobManMakeRegistration.Init(EmployeeNo, CurrentDateTime(), Today(), CurrentDateTime(), 0);
-
-        case JobType of
-            'IPO':
-                begin
-                    if JobManJob.RefType <> JobManJob.RefType::IPC then begin
-                        Error(JobTypeMismatchLbl, JobNo, JobType);
-                    end;
-
-                    if not JobManIpcActivity.Find_JobNo(JobManJob.JobNo) then begin
-                        Error(IpcActivityNotFoundLbl, JobNo);
-                    end;
-
-                    JobManMakeRegistration.MakeRegistration_IPC(JobManIpcActivity, true);
+        GetActiveJobs(EmployeeNo, ActiveJobs);
+        if ActiveJobs.FindSet(false) then begin
+            repeat
+                if ActiveJobs.RefType = ActiveJobs.RefType::Production then begin
+                    exit(true);
                 end;
-            'SAG':
-                begin
-                    if JobManJob.RefType <> JobManJob.RefType::Job then begin
-                        Error(JobTypeMismatchLbl, JobNo, JobType);
-                    end;
-
-                    JobManBundleLine.InitFrom_JobManJob(JobManJob);
-                    JobManBundleLine.Counter := 1;
-                    JobManMakeRegistration.MakeRegistration_Job(JobManBundleLine);
-                end;
-            'PRODUCTION':
-                begin
-                    if JobManJob.RefType <> JobManJob.RefType::Production then begin
-                        Error(JobTypeMismatchLbl, JobNo, JobType);
-                    end;
-
-                    JobManBundleLine.InitFrom_JobManJob(JobManJob);
-                    JobManBundleLine.Counter := 1;
-                    JobManMakeRegistration.MakeRegistration_Production(JobManBundleLine);
-                end;
-            else begin
-                Error(UnsupportedJobTypeLbl, JobType);
-            end;
+            until ActiveJobs.Next() = 0;
         end;
+
+        exit(false);
+    end;
+
+    local procedure GetApiId(): Code[10]
+    begin
+        exit('TASKLET');
+    end;
+
+    local procedure GetTimeOffsetUTC(): Integer
+    begin
+        exit(0);
     end;
 
     var
@@ -203,7 +234,4 @@ codeunit 50100 TaskletSubscriber
         EmployeeNotFoundLbl: Label 'Employee %1 was not found.';
         EmployeeNotActiveLbl: Label 'Employee %1 is not active.';
         JobNotFoundLbl: Label 'Job %1 was not found.';
-        IpcActivityNotFoundLbl: Label 'IPO activity for job %1 was not found.';
-        JobTypeMismatchLbl: Label 'Job %1 does not match type %2.';
-        UnsupportedJobTypeLbl: Label 'Job type %1 is not supported. Use IPO, SAG or Production.';
 }
