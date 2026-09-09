@@ -44,6 +44,9 @@ codeunit 50100 TaskletSubscriber
             _Messages.Create('ENU', 'EmployeeNo', 'Employee No.');
             _Messages.Create('ENU', 'JobNo', 'Job No.');
             _Messages.Create('ENU', 'ScanJobno', 'Scan Job no.');
+            _Messages.Create('ENU', 'StopTime', 'Stop time');
+            _Messages.Create('ENU', 'FinishJob', 'Finish job');
+            _Messages.Create('ENU', 'FinishJobRegistration', 'Would you like to stop time/finish the job?');
         end;
 
         // Create Danish translation for my custom mobile message
@@ -51,6 +54,9 @@ codeunit 50100 TaskletSubscriber
             _Messages.Create('DAN', 'JobRegistration', 'Job registrering');
             _Messages.Create('DAN', 'EmployeeNo', 'Medarbejder nr.');
             _Messages.Create('DAN', 'ScanJobno', 'Scan Job nr.');
+            _Messages.Create('DAN', 'StopTime', 'Stop tid');
+            _Messages.Create('DAN', 'FinishJob', 'Afslut');
+            _Messages.Create('DAN', 'FinishJobRegistration', 'Vil du stop tid/afslut jobbet?');
         end;
 
     end;
@@ -60,6 +66,37 @@ codeunit 50100 TaskletSubscriber
     begin
         _HeaderFields.InitConfigurationKey('JobRegistration');
         _HeaderFields.Create_TextField(10, 'EmployeeNo', '@{EmployeeNo}');
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Reference Data", 'OnGetReferenceData_OnAddDataTables', '', true, true)]
+    local procedure OnGetReferenceData_OnAddDataTables(var _DataTable: Record "MOB DataTable Element"; _MobileUserID: Code[50])
+    Var
+        MOBUser: Record "MOB User";
+        MOBMessage: Record "MOB Message";
+    begin
+        MOBUser.Get(_MobileUserID);
+        If MOBUser."Language Code" <> '' then begin
+            MOBMessage.Reset();
+            MOBMessage.SetRange("Language Code", MOBUser."Language Code");
+        end else begin
+            MOBMessage.Reset();
+            MOBMessage.SetRange("Language Code", 'ENU');
+        end;
+
+        _DataTable.InitDataTable('FinishJobOptions');
+        MOBMessage.SetRange(Code, 'STOPTIME');
+        If MOBMessage.findset then begin
+            _DataTable.Create_CodeAndName('STOP_TIME', MOBMessage.Message);
+        end else begin
+            _DataTable.Create_CodeAndName('STOP_TIME', 'Stop Time');
+        end;
+
+        MOBMessage.SetRange(Code, 'FINISHJOB');
+        If MOBMessage.findset then begin
+            _DataTable.Create_CodeAndName('FINISH_JOB', MOBMessage.Message);
+        end else begin
+            _DataTable.Create_CodeAndName('FINISH_JOB', 'Finish Job');
+        end;
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Adhoc Registr.", 'OnGetRegistrationConfiguration_OnAddSteps', '', true, true)]
@@ -127,7 +164,7 @@ codeunit 50100 TaskletSubscriber
             IsSameJobActive := IsSameJobActive(EmployeeNo, JobManJob, JobNo);
 
             repeat
-                if FinishJobRegistration = 'Afslut' then begin
+                if FinishJobRegistration = 'FINISH_JOB' then begin
                     JobManApiRegistration.JobFinish(GetApiId(), EmployeeNo, '', ActiveJobs.LineSequence);
                 end else begin
                     JobManApiRegistration.JobStop(GetApiId(), EmployeeNo, '', ActiveJobs.LineSequence);
@@ -189,10 +226,12 @@ codeunit 50100 TaskletSubscriber
         Steps.Create();
         Steps.Set_id(20);
         Steps.Set_name('FinishJobRegistration');
-        Steps.Set_label('Vil du stop tid/afslut jobbet?');
+        Steps.Set_label('@{FinishJobRegistration}');
         Steps.Set_inputType('List');
-        Steps.Set_listValues('Stop tid;Afslut');
-        Steps.Set_defaultValue('Stop tid');
+        Steps.Set_dataTable('FinishJobOptions');
+        Steps.Set_dataKeyColumn('Code');
+        Steps.Set_dataDisplayColumn('Name');
+        Steps.Set_defaultValue('STOP_TIME');
         Steps.Save();
     end;
 
