@@ -282,6 +282,7 @@ codeunit 50100 TaskletSubscriber
         end;
 
         _DataTable.InitDataTable('FinishJobOptions');
+
         MOBMessage.SetRange(Code, 'STOPTIME');
         If MOBMessage.findset then begin
             _DataTable.Create_CodeAndName('STOP_TIME', MOBMessage.Message);
