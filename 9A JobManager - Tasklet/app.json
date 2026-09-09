@@ -11,8 +11,8 @@
   "url": "",
   "logo": "",
   "dependencies": [
-    {"id": "a5727ce6-368c-49e2-84cb-1a6052f0551c","name": "Tasklet Mobile WMS","publisher": "Tasklet Factory","version": "5.66.280.282"},
-    {"id": "88b17f5c-c5a1-4c2e-aff3-3d7aba65b4c5","name": "JobManager","publisher": "dynalogic","version": "1.41.17701.3"}
+    {"id": "a5727ce6-368c-49e2-84cb-1a6052f0551c","name": "Tasklet Mobile WMS","publisher": "Tasklet Factory","version": "0.0.0.0"},
+    {"id": "88b17f5c-c5a1-4c2e-aff3-3d7aba65b4c5","name": "JobManager","publisher": "dynalogic","version": "0.0.0.0"}
   ],
   "resourceFolders": [
     "resources"
