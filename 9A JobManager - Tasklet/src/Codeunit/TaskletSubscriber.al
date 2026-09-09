@@ -3,28 +3,9 @@ codeunit 50100 TaskletSubscriber
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB Application Configuration", 'OnGetApplicationConfiguration_OnAddTweaks', '', true, true)]
     local procedure OnGetApplicationConfiguration_OnAddTweaks(var _MobTweakContainer: Codeunit "MOB Tweak Container")
     var
-        Tweak: Text;
+    //Tweak: Text;
     begin
-        Tweak :=
-            '<?xml version="1.0" encoding="utf-8"?>' +
-            '<application xmlns="http://schemas.taskletfactory.com/MobileWMS/Application">' +
-            '  <pages>' +
-            '    <page id="JobRegistration" type="UnplannedItemRegistration" icon="stopwatch" tweak="Append">' +
-            '      <title defaultValue="@{JobRegistration}" />' +
-            '      <unplannedItemRegistrationConfiguration type="JobRegistration" useRegistrationCollector="true">' +
-            '        <header configurationKey="JobRegistration" automaticAcceptOnOpen="true" clearAfterPost="true" />' +
-            '      </unplannedItemRegistrationConfiguration>' +
-            '    </page>' +
-            '    <page id="MainMenu">' +
-            '      <menuConfiguration>' +
-            '        <menuItems>' +
-            '          <menuItem id="JobRegistration" displayName="@{JobRegistration}" icon="stopwatch" tweak="Append" />' +
-            '        </menuItems>' +
-            '      </menuConfiguration>' +
-            '    </page>' +
-            '  </pages>' +
-            '</application>';
-        _MobTweakContainer.Add(1000, 'Page: JobRegistration', Tweak);
+        _MobTweakContainer.Add(1000, 'Page: JobRegistration', NavApp.GetResourceAsText('JobRegistrationTweak.xml'));
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MOB WMS Language", 'OnAddMessages', '', true, true)]
