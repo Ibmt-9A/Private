@@ -65,7 +65,7 @@ codeunit 50100 TaskletSubscriber
         EmployeeNo := CopyStr(_HeaderFieldValues.GetValue('EmployeeNo'), 1, MaxStrLen(EmployeeNo));
 
         CreateTextStep(_Steps, 10, 'JobNo', '@{JobNo}', '@{ScanJobno}');
-        if EmployeeHasActiveProdJobs(EmployeeNo) then begin
+        if EmployeeCanFinishActiveJobs(EmployeeNo) then begin
             CreateFinishJobStep(_Steps);
         end;
 
@@ -189,10 +189,10 @@ codeunit 50100 TaskletSubscriber
         Steps.Save();
     end;
 
-    local procedure EmployeeHasActiveProdJobs(EmployeeNo: Code[20]): Boolean
+    local procedure EmployeeCanFinishActiveJobs(EmployeeNo: Code[20]): Boolean
     var
         ActiveJobs: Record JobManStampJournalLine;
-
+        JobManJob: Record JobManJob;
     begin
         if EmployeeNo = '' then begin
             exit(false);
@@ -201,8 +201,11 @@ codeunit 50100 TaskletSubscriber
         GetActiveJobs(EmployeeNo, ActiveJobs);
         if ActiveJobs.FindSet(false) then begin
             repeat
-                if ActiveJobs.RefType = ActiveJobs.RefType::Production then begin
-                    exit(true);
+                // Same permission gate JobManager itself uses (JobManJobBundle.ActiveJobsFeedbackReportFinishSetYes)
+                if JobManJob.Get(ActiveJobs.JobNo) then begin
+                    if JobManJob.AllowFeedback in [JobManJob.AllowFeedback::QtyAndStatus, JobManJob.AllowFeedback::Status] then begin
+                        exit(true);
+                    end;
                 end;
             until ActiveJobs.Next() = 0;
         end;
