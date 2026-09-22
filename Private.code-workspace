@@ -4,9 +4,6 @@
 			"path": "9A JobManager - Tasklet"
 		},
 		{
-			"path": "9A AL Agents (ZeroInvAgentFactory)"
-		},
-		{
 			"path": "9A BC Analyzer"
 		},
 		{
@@ -19,7 +16,10 @@
 			"path": "Tasklet sample"
 		},
 		{
-			"path": "9A AL Agents (SalesOrderAgent)"
+			"path": "9A AI Agents (SalesOrderAgent)"
+		},
+		{
+			"path": "9A AI Agents (ZeroInvAgentFactory)"
 		}
 	],
 	"settings": {}
