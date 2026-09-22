@@ -1,0 +1,12 @@
+# ALTB
+.alpackages/
+.vscode/alcache/
+.vscode/.alcache/
+.altemplates/
+.altestrunner/
+!app.json
+rad.json
+*.app
+*.g.xlf
+
+.vscode/mcp.json
