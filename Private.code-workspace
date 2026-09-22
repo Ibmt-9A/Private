@@ -4,7 +4,19 @@
 			"path": "9A JobManager - Tasklet"
 		},
 		{
-			"path": "9A AL Agents"
+			"path": "9A AL Agents (ZeroInvAgentFactory)"
+		},
+		{
+			"path": "9A BC Analyzer"
+		},
+		{
+			"path": "9A Tool"
+		},
+		{
+			"path": "9A Update Blocker"
+		},
+		{
+			"path": "Tasklet sample"
 		}
 	],
 	"settings": {}
