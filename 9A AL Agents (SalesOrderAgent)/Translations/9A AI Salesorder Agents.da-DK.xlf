@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="9A AI Salesorder Agents.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1627429672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent KPI</source>
+          <target>NAL Sales Order Agent nøgletal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 2561963194 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of sales orders created by the agent.</source>
+          <target>Angiver antallet af salgsordrer, som agenten har oprettet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field OrdersCreatedCount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 2561963194 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Orders Created</source>
+          <target>Oprettede salgsordrer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field OrdersCreatedCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 1600376718 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of sales quotes created by the agent.</source>
+          <target>Angiver antallet af salgstilbud, som agenten har oprettet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field QuotesCreatedCount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 1600376718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Quotes Created</source>
+          <target>Oprettede salgstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field QuotesCreatedCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 3021697414 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unique identifier for the agent user.</source>
+          <target>Angiver den entydige identifikator for agentbrugeren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field User Security ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1627429672 - Field 3021697414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Security ID</source>
+          <target>Brugersikkerheds-id</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentKPI - Field User Security ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent Request Line</source>
+          <target>NAL Sales Order Agent anmodningslinje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the customer.</source>
+          <target>Angiver navnet på debitoren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <target>Debitornavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer the order request is for. Use the same customer on every line.</source>
+          <target>Angiver den debitor, som ordreanmodningen gælder for. Brug den samme debitor på alle linjer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Debitornr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the item.</source>
+          <target>Angiver beskrivelsen af varen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the requested item.</source>
+          <target>Angiver den ønskede vare.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <target>Varenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number.</source>
+          <target>Angiver linjenummeret.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Linjenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the requested quantity.</source>
+          <target>Angiver det ønskede antal.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 135600996 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the delivery date requested by the customer.</source>
+          <target>Angiver den leveringsdato, som debitoren har anmodet om.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Requested Delivery Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1799427027 - Field 135600996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requested Delivery Date</source>
+          <target>Ønsket leveringsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentRequestLine - Field Requested Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2119018243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent Setup</source>
+          <target>NAL Sales Order Agent opsætning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2119018243 - Field 3021697414 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unique identifier for the user.</source>
+          <target>Angiver den entydige identifikator for brugeren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentSetup - Field User Security ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2119018243 - Field 3021697414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Security ID</source>
+          <target>Brugersikkerheds-id</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NALSOAgentSetup - Field User Security ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 1899529667" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line %1 is missing an Item No.</source>
+          <target>Linje %1 mangler et varenr.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Line No.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType ItemRequiredErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 3359697259" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter at least one order line before sending the request to the agent.</source>
+          <target>Angiv mindst én ordrelinje, før anmodningen sendes til agenten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType NoLinesErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 1783599827" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All lines must use the same Customer No. Split requests for different customers into separate tasks.</source>
+          <target>Alle linjer skal bruge samme debitornr. Opdel anmodninger til forskellige debitorer i separate opgaver.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType OneCustomerOnlyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 2891503881" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line %1 must have a Quantity greater than 0.</source>
+          <target>Linje %1 skal have et antal større end 0.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Line No.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType QuantityRequiredErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3061669441 - NamedType 24296178" maxwidth="4" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SOA</source>
+          <target>SOA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentSetupMgt - NamedType AgentInitialsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3061669441 - NamedType 2632276440" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentSetupMgt - NamedType AgentNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3061669441 - NamedType 896185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Captures sales quote and order requests and creates the matching sales documents.</source>
+          <target>Registrerer anmodninger om salgstilbud og -ordrer og opretter de tilhørende salgsdokumenter.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentSetupMgt - NamedType AgentSummaryLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3061669441 - NamedType 3452859768" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentSetupMgt - NamedType DefaultDisplayNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent Summary</source>
+          <target>NAL Sales Order Agent oversigt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - NamedType 3539884849" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The agent does not exist. Please check the configuration.</source>
+          <target>Agenten findes ikke. Kontroller konfigurationen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - NamedType AgentDoesNotExistErr</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Control 912115252 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Key Performance Indicators</source>
+          <target>Nøgletal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control KeyMetrics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Control 2561963194 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of sales orders created by the agent.</source>
+          <target>Angiver antallet af salgsordrer, som agenten har oprettet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control OrdersCreatedCount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Control 2561963194 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Orders Created</source>
+          <target>Oprettede salgsordrer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control OrdersCreatedCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Control 1600376718 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of sales quotes created by the agent.</source>
+          <target>Angiver antallet af salgstilbud, som agenten har oprettet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control QuotesCreatedCount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1627429672 - Control 1600376718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Quotes Created</source>
+          <target>Oprettede salgstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control QuotesCreatedCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order Agent Requests</source>
+          <target>Sales Order Agent-anmodninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - NamedType 3589110352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No NAL Sales Order Agent was selected.</source>
+          <target>Der blev ikke valgt nogen NAL Sales Order Agent.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType NoAgentSelectedErr</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - NamedType 4000634304" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Task %1 assigned to agent %2.</source>
+          <target>Opgave %1 er tildelt agenten %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Task ID, %2 = Agent display name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType TaskAssignedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - NamedType 2470574273" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create sales quote from order request</source>
+          <target>Opret salgstilbud ud fra ordreanmodning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType TaskTitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the customer.</source>
+          <target>Angiver navnet på debitoren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer the order request is for. Use the same customer on every line.</source>
+          <target>Angiver den debitor, som ordreanmodningen gælder for. Brug den samme debitor på alle linjer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the item.</source>
+          <target>Angiver beskrivelsen af varen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the requested item.</source>
+          <target>Angiver den ønskede vare.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the requested quantity.</source>
+          <target>Angiver det ønskede antal.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Control 135600996 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the delivery date requested by the customer.</source>
+          <target>Angiver den leveringsdato, som debitoren har anmodet om.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Requested Delivery Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Action 1717711876 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ask the NAL Sales Order Agent to create a sales quote from the entered request lines.</source>
+          <target>Bed NAL Sales Order Agent om at oprette et salgstilbud ud fra de indtastede anmodningslinjer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendToSalesOrderAgent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2710480921 - Action 1717711876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send to Sales Order Agent</source>
+          <target>Send til Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendToSalesOrderAgent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent Role Center</source>
+          <target>NAL Sales Order Agent rollecenter</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1406942772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales</source>
+          <target>Salg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 3606140129 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of customers.</source>
+          <target>Få vist listen over debitorer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Customers - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 3606140129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+          <target>Debitorer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Customers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1159415319 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of sales orders.</source>
+          <target>Få vist listen over salgsordrer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesOrders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1159415319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Orders</source>
+          <target>Salgsordrer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1149918667 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of sales quotes.</source>
+          <target>Få vist listen over salgstilbud.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesQuotes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1149918667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Quotes</source>
+          <target>Salgstilbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesQuotes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 878901526 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order Requests</source>
+          <target>Salgsordreanmodninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 166038904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a structured sales order request to send to the agent.</source>
+          <target>Indtast en struktureret salgsordreanmodning, der skal sendes til agenten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action OrderRequests - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 166038904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order Requests</source>
+          <target>Salgsordreanmodninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action OrderRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Captures sales quote and order requests and creates the matching sales documents.</source>
+          <target>Registrerer anmodninger om salgstilbud og -ordrer og opretter de tilhørende salgsdokumenter.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up NAL Sales Order Agent</source>
+          <target>Opsæt NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent, Agent</source>
+          <target>NAL Sales Order Agent, Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - NamedType 1118044954" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The NAL Sales Order Agent capability is not enabled in Copilot capabilities.\\Please enable the capability before setting up the agent.</source>
+          <target>NAL Sales Order Agent-funktionen er ikke aktiveret i Copilot-funktioner.\\Aktiver funktionen, før agenten opsættes.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - NamedType NALAgentIsNotEnabledInCopilotCapabilitiesErr</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Control 3481307027 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update the agent display name.</source>
+          <target>Opdater agentens viste navn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Control AdditionalConfiguration - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Control 3481307027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Additional Configuration</source>
+          <target>Yderligere konfiguration</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Control AdditionalConfiguration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Control 2058393039 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the display name of the agent.</source>
+          <target>Angiver agentens viste navn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Control DisplayName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Control 2058393039 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Display Name</source>
+          <target>Vist navn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Control DisplayName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Action 788258546 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discards the changes and closes the setup page.</source>
+          <target>Kasserer ændringerne og lukker opsætningssiden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Action Cancel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target>Annuller</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Action 2079045816 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply the changes to the agent setup.</source>
+          <target>Anvender ændringerne på agentopsætningen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Action OK - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2119018243 - Action 2079045816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update</source>
+          <target>Opdater</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Action OK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 1654288231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile NALSOAgentProfile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 2111998745 - EnumValue 38992744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3058546390">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension NALSOAgentCopilotCapExt - EnumValue NAL Sales Order Agent Capability - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 2685782619 - EnumValue 2510151576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3596146799">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension NALSOAgentMetaProvExt - EnumValue NAL Sales Order Agent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 4167618834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAL Sales Order Agent</source>
+          <target>NAL Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet NALSOAgent - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
