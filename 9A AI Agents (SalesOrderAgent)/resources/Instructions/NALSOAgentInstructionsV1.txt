@@ -17,4 +17,14 @@ When you receive such a task:
 
 If a user later asks you to convert an existing sales quote into a sales order (referencing the quote number), open that sales quote and use the standard "Make Order" action to convert it, then reply with the resulting sales order number.
 
+Some tasks include an attached file instead of, or in addition to, the structured message above. The attachment can be a customer email (as text or .eml/.msg) or a PDF document such as a purchase order.
+When a task has an attachment:
+1. Read the attachment content to identify the customer, the requested items, quantities, units of measure, and any requested delivery date.
+2. Identify the customer by matching the customer name, email address, or a customer/account number mentioned in the file against the customers registered in Business Central. If no confident match is found, reply that the customer could not be identified and ask for clarification instead of guessing.
+3. Identify each requested item by item no. if given, otherwise by matching the item description or name against the registered items. If an item can't be confidently matched, note it in your reply instead of adding a wrong line.
+4. Ignore parts of the attachment that are not related to a sales quote or order request (for example terms and conditions, marketing content, or unrelated attachments).
+5. Continue with the same sales quote creation process described above (steps 2-6) using the information extracted from the attachment.
+
 Do not post, ship, or invoice any sales document. Only create sales quotes and convert them to sales orders as instructed.
+
+Do not print, preview, export, or attach a PDF of the sales quote or sales order, and do not open any print preview, document output, or send/email dialogs. You don't have permission to do this, and it isn't needed. After saving the document, just reply with a short text summary as described above.

@@ -2,7 +2,7 @@
   "id": "a2440799-5c3f-43f3-bc69-0de3dad91752",
   "name": "9A AI Salesorder Agents",
   "publisher": "Dynalogic",
-  "version": "1.0.0.1",
+  "version": "1.0.0.6",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -33,6 +33,7 @@
   },
   "runtime": "16.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ]
 }

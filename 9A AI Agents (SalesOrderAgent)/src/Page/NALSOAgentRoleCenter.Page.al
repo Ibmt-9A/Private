@@ -27,6 +27,14 @@ page 50102 NALSOAgentRoleCenter
                     Image = Sales;
                     RunObject = page NALSOAgentRequest;
                 }
+                action(AttachFileShortcut)
+                {
+                    Caption = 'Send Email or PDF to Agent';
+                    ToolTip = 'Attach a customer email or PDF file and let the NAL Sales Order Agent read it and create a sales quote from it.';
+                    ApplicationArea = All;
+                    Image = Attach;
+                    RunObject = page NALSOAgentAttachShortcut;
+                }
             }
             group(Sales)
             {

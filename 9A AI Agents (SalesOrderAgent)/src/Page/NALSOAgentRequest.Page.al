@@ -88,6 +88,26 @@ page 50103 NALSOAgentRequest
                     Message(TaskAssignedMsg, AgentTask.ID, Agent.GetDisplayName(AgentUserSecurityId));
                 end;
             }
+            action(AttachFileToSalesOrderAgent)
+            {
+                Caption = 'Send Email or PDF to Agent';
+                ToolTip = 'Attach a customer email or PDF file and let the NAL Sales Order Agent read it and create a sales quote from it.';
+                Image = Attach;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+
+                trigger OnAction()
+                var
+                    NALSOAgentRequestMgt: Codeunit NALSOAgentRequestMgt;
+                    MessageTxt: Text;
+                begin
+                    MessageTxt := NALSOAgentRequestMgt.BuildAttachmentTaskMessage(Rec);
+                    if NALSOAgentRequestMgt.SendAttachmentToAgent(MessageTxt) then
+                        Rec.DeleteAll();
+                end;
+            }
         }
     }
 
