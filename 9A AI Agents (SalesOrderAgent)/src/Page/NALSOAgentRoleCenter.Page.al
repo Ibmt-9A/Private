@@ -29,11 +29,19 @@ page 50102 NALSOAgentRoleCenter
                 }
                 action(AttachFileShortcut)
                 {
-                    Caption = 'Send Email or PDF to Agent';
-                    ToolTip = 'Attach a customer email or PDF file and let the NAL Sales Order Agent read it and create a sales quote from it.';
+                    Caption = 'Send PDF or Image to Agent';
+                    ToolTip = 'Attach a PDF or image file (for example a PDF export of a customer email, a scanned order, or a photo) and let the NAL Sales Order Agent read it and create a sales quote from it. Only PDF, PNG, and JPG files are supported - save an Outlook email as PDF first (File > Save As > PDF).';
                     ApplicationArea = All;
                     Image = Attach;
                     RunObject = page NALSOAgentAttachShortcut;
+                }
+                action(PasteTextShortcut)
+                {
+                    Caption = 'Send Pasted Order Text to Agent';
+                    ToolTip = 'Paste order request text copied directly from an email body (instead of attaching a file) and let the NAL Sales Order Agent read it and create a sales quote from it.';
+                    ApplicationArea = All;
+                    Image = Comment;
+                    RunObject = page NALSOAgentPasteTextRequest;
                 }
             }
             group(Sales)
@@ -63,6 +71,14 @@ page 50102 NALSOAgentRoleCenter
                     ApplicationArea = All;
                     Image = Customer;
                     RunObject = page "Customer List";
+                }
+                action(Items)
+                {
+                    Caption = 'Items';
+                    ToolTip = 'View the list of items, including exact item numbers and on-hand inventory.';
+                    ApplicationArea = All;
+                    Image = Item;
+                    RunObject = page "Item List";
                 }
             }
         }

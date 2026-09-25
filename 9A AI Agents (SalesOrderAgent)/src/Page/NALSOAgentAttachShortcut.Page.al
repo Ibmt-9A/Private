@@ -2,7 +2,7 @@
 page 50104 NALSOAgentAttachShortcut
 {
     PageType = Card;
-    Caption = 'Send Email or PDF to Agent';
+    Caption = 'Send PDF or Image to Agent';
     ApplicationArea = All;
     Extensible = false;
 

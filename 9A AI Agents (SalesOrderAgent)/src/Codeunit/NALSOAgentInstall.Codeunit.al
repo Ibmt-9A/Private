@@ -8,24 +8,10 @@ codeunit 50104 NALSOAgentInstall
 
     trigger OnInstallAppPerDatabase()
     var
-        NALSOAgentSetup: Record NALSOAgentSetup;
-    begin
-        RegisterCapability();
-
-        if not NALSOAgentSetup.FindSet() then
-            exit;
-
-        repeat
-            InstallAgentInstructions(NALSOAgentSetup);
-        until NALSOAgentSetup.Next() = 0;
-    end;
-
-    local procedure InstallAgentInstructions(var NALSOAgentSetup: Record NALSOAgentSetup)
-    var
-        Agent: Codeunit Agent;
         NALSOAgentSetupMgt: Codeunit NALSOAgentSetupMgt;
     begin
-        Agent.SetInstructions(NALSOAgentSetup."User Security ID", NALSOAgentSetupMgt.GetInstructions());
+        RegisterCapability();
+        NALSOAgentSetupMgt.RefreshInstructionsForAllAgents();
     end;
 
     local procedure RegisterCapability()

@@ -22,5 +22,7 @@
 			"path": "9A AI Agents (ZeroInvAgentFactory)"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"powershell.cwd": "9A AI Agents (SalesOrderAgent)"
+	}
 }

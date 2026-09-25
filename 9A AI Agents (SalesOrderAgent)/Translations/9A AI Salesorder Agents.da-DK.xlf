@@ -159,41 +159,41 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType FileTaskTitleLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1585597915 - NamedType 1899529667" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Line %1 is missing an Item No.</source>
-          <target>Linje %1 mangler et varenr.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = Line No.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType ItemRequiredErr</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1585597915 - NamedType 3589110352" size-unit="char" translate="yes" xml:space="preserve">
           <source>No NAL Sales Order Agent was selected.</source>
           <target>Der blev ikke valgt nogen NAL Sales Order Agent.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType NoAgentSelectedErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1585597915 - NamedType 3359697259" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Enter at least one order line before sending the request to the agent.</source>
-          <target>Angiv mindst én ordrelinje, før anmodningen sendes til agenten.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType NoLinesErr</note>
+        <trans-unit id="Codeunit 1585597915 - NamedType 3897134584" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 looks like the email itself, not the attachment. Open the PDF/image attachment in its own window in Outlook and drag it from there, or save it to disk first, then attach that file.</source>
+          <target>Filen %1 ligner selve e-mailen og ikke vedhæftningen. Åbn PDF-/billedvedhæftningen i sit eget vindue i Outlook, og træk den derfra, eller gem den på disk først, og vedhæft derefter den fil.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = File name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType OutlookDragErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1585597915 - NamedType 1783599827" size-unit="char" translate="yes" xml:space="preserve">
-          <source>All lines must use the same Customer No. Split requests for different customers into separate tasks.</source>
-          <target>Alle linjer skal bruge samme debitornr. Opdel anmodninger til forskellige debitorer i separate opgaver.</target>
+        <trans-unit id="Codeunit 1585597915 - NamedType 2515965479" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create sales quote from pasted order text</source>
+          <target>Opret salgstilbud ud fra indsat ordretekst</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType OneCustomerOnlyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1585597915 - NamedType 2891503881" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Line %1 must have a Quantity greater than 0.</source>
-          <target>Linje %1 skal have et antal større end 0.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = Line No.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType QuantityRequiredErr</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType PastedTextTaskTitleLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 1585597915 - NamedType 4000634304" size-unit="char" translate="yes" xml:space="preserve">
           <source>Task %1 assigned to agent %2.</source>
           <target>Opgave %1 er tildelt agenten %2.</target>
           <note from="Developer" annotates="general" priority="2">%1 = Task ID, %2 = Agent display name</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType TaskAssignedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 4031717314" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 has an unrecognized file type and cannot be attached. Save it as a PDF, PNG, or JPG file first and try again.</source>
+          <target>Filen %1 har en filtype, der ikke genkendes, og kan ikke vedhæftes. Gem den som en PDF-, PNG- eller JPG-fil, og prøv igen.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = File name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType UnsupportedFileTypeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1585597915 - NamedType 3225951371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a PDF or image file</source>
+          <target>Vælg en PDF- eller billedfil</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentRequestMgt - NamedType UploadDialogTitleLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3061669441 - NamedType 24296178" maxwidth="4" size-unit="char" translate="yes" xml:space="preserve">
           <source>SOA</source>
@@ -220,8 +220,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit NALSOAgentSetupMgt - NamedType DefaultDisplayNameLbl</note>
         </trans-unit>
         <trans-unit id="Page 4224230727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send Email or PDF to Agent</source>
-          <target>Send mail eller PDF til agent</target>
+          <source>Send PDF or Image to Agent</source>
+          <target>Send PDF eller billede til agent</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentAttachShortcut - Property Caption</note>
         </trans-unit>
@@ -267,89 +267,71 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentKPI - Control QuotesCreatedCount - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2379766563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Pasted Order Text to Agent</source>
+          <target>Send indsat ordretekst til agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2379766563 - NamedType 1957292764" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paste the order text before sending it to the agent.</source>
+          <target>Indsæt ordreteksten, før den sendes til agenten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - NamedType NoTextEnteredErr</note>
+        </trans-unit>
+        <trans-unit id="Page 2379766563 - Control 1913263581 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer's order request text, for example copied directly from an email body. Paste as plain text (Ctrl+Shift+V) to avoid carrying over formatting from the source email.</source>
+          <target>Angiver debitorens ordreanmodningstekst, f.eks. kopieret direkte fra brødteksten i en e-mail. Indsæt som almindelig tekst (Ctrl+Shift+V) for at undgå at overføre formatering fra den oprindelige e-mail.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - Control OrderText - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2379766563 - Control 1913263581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Text</source>
+          <target>Ordretekst</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - Control OrderText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2379766563 - Action 1717711876 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sends the pasted text to the NAL Sales Order Agent to create a sales quote from it.</source>
+          <target>Sender den indsatte tekst til NAL Sales Order Agent for at oprette et salgstilbud ud fra den.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - Action SendToSalesOrderAgent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2379766563 - Action 1717711876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send to Sales Order Agent</source>
+          <target>Send til Sales Order Agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentPasteTextRequest - Action SendToSalesOrderAgent - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2710480921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Order Agent Requests</source>
           <target>Sales Order Agent-anmodninger</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2710480921 - NamedType 3589110352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No NAL Sales Order Agent was selected.</source>
-          <target>Der blev ikke valgt nogen NAL Sales Order Agent.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType NoAgentSelectedErr</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - NamedType 4000634304" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Task %1 assigned to agent %2.</source>
-          <target>Opgave %1 er tildelt agenten %2.</target>
-          <note from="Developer" annotates="general" priority="2">%1 = Task ID, %2 = Agent display name</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType TaskAssignedMsg</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - NamedType 2470574273" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Create sales quote from order request</source>
-          <target>Opret salgstilbud ud fra ordreanmodning</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - NamedType TaskTitleLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the name of the customer.</source>
-          <target>Angiver navnet på debitoren.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Customer Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the customer the order request is for. Use the same customer on every line.</source>
-          <target>Angiver den debitor, som ordreanmodningen gælder for. Brug den samme debitor på alle linjer.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Customer No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the description of the item.</source>
-          <target>Angiver beskrivelsen af varen.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Description - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the requested item.</source>
-          <target>Angiver den ønskede vare.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Item No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the requested quantity.</source>
-          <target>Angiver det ønskede antal.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Quantity - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2710480921 - Control 135600996 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the delivery date requested by the customer.</source>
-          <target>Angiver den leveringsdato, som debitoren har anmodet om.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Control Requested Delivery Date - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 2710480921 - Action 3610920091 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Attach a customer email or PDF file and let the NAL Sales Order Agent read it and create a sales quote from it.</source>
-          <target>Vedhæft en mail eller PDF-fil fra kunden, og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den.</target>
+          <source>Attach a PDF or image file (for example a PDF export of a customer email, a scanned order, or a photo) and let the NAL Sales Order Agent read it and create a sales quote from it. Only PDF, PNG, and JPG files are supported - save an Outlook email as PDF first (File &gt; Save As &gt; PDF).</source>
+          <target>Vedhæft en PDF- eller billedfil (f.eks. en PDF-eksport af en kunde-mail, en indscannet ordre eller et foto), og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den. Kun PDF-, PNG- og JPG-filer understøttes – gem en Outlook-mail som PDF først (Filer &gt; Gem som &gt; PDF).</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action AttachFileToSalesOrderAgent - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2710480921 - Action 3610920091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send Email or PDF to Agent</source>
-          <target>Send mail eller PDF til agent</target>
+          <source>Send PDF or Image to Agent</source>
+          <target>Send PDF eller billede til agent</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action AttachFileToSalesOrderAgent - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2710480921 - Action 1717711876 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ask the NAL Sales Order Agent to create a sales quote from the entered request lines.</source>
-          <target>Bed NAL Sales Order Agent om at oprette et salgstilbud ud fra de indtastede anmodningslinjer.</target>
+        <trans-unit id="Page 2710480921 - Action 2837407079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paste order request text copied directly from an email body (instead of attaching a file) and let the NAL Sales Order Agent read it and create a sales quote from it.</source>
+          <target>Indsæt ordreanmodningstekst kopieret direkte fra en e-mails brødtekst (i stedet for at vedhæfte en fil), og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendToSalesOrderAgent - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendTextToSalesOrderAgent - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2710480921 - Action 1717711876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send to Sales Order Agent</source>
-          <target>Send til Sales Order Agent</target>
+        <trans-unit id="Page 2710480921 - Action 2837407079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Pasted Order Text to Agent</source>
+          <target>Send indsat ordretekst til agent</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendToSalesOrderAgent - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRequest - Action SendTextToSalesOrderAgent - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3796568387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>NAL Sales Order Agent Role Center</source>
@@ -374,6 +356,18 @@
           <target>Debitorer</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Customers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1554554962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of items, including exact item numbers and on-hand inventory.</source>
+          <target>Få vist listen over varer, herunder eksakte varenumre og lager på hånden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 1554554962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <target>Varer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action Items - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3796568387 - Action 1159415319 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>View the list of sales orders.</source>
@@ -406,14 +400,14 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action SalesRequests - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3796568387 - Action 3307065591 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Attach a customer email or PDF file and let the NAL Sales Order Agent read it and create a sales quote from it.</source>
-          <target>Vedhæft en mail eller PDF-fil fra kunden, og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den.</target>
+          <source>Attach a PDF or image file (for example a PDF export of a customer email, a scanned order, or a photo) and let the NAL Sales Order Agent read it and create a sales quote from it. Only PDF, PNG, and JPG files are supported - save an Outlook email as PDF first (File &gt; Save As &gt; PDF).</source>
+          <target>Vedhæft en PDF- eller billedfil (f.eks. en PDF-eksport af en kunde-mail, en indscannet ordre eller et foto), og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den. Kun PDF-, PNG- og JPG-filer understøttes – gem en Outlook-mail som PDF først (Filer &gt; Gem som &gt; PDF).</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action AttachFileShortcut - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3796568387 - Action 3307065591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send Email or PDF to Agent</source>
-          <target>Send mail eller PDF til agent</target>
+          <source>Send PDF or Image to Agent</source>
+          <target>Send PDF eller billede til agent</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action AttachFileShortcut - Property Caption</note>
         </trans-unit>
@@ -428,6 +422,18 @@
           <target>Salgsordreanmodninger</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action OrderRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 3941355842 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paste order request text copied directly from an email body (instead of attaching a file) and let the NAL Sales Order Agent read it and create a sales quote from it.</source>
+          <target>Indsæt ordreanmodningstekst kopieret direkte fra en e-mails brødtekst (i stedet for at vedhæfte en fil), og lad NAL Sales Order Agent læse den og oprette et salgstilbud ud fra den.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action PasteTextShortcut - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3796568387 - Action 3941355842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Pasted Order Text to Agent</source>
+          <target>Send indsat ordretekst til agent</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentRoleCenter - Action PasteTextShortcut - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2119018243 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
           <source>Captures sales quote and order requests and creates the matching sales documents.</source>
@@ -500,6 +506,36 @@
           <target>Opdater</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentSetup - Action OK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 925655487 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Text Line</source>
+          <target>Tilføj tekstlinje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentTextLineDialog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 925655487 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the free text to show on the sales line. No item lookup is performed on this text.</source>
+          <target>Angiver den frie tekst, der skal vises på salgslinjen. Der udføres ikke noget vareopslag på denne tekst.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentTextLineDialog - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 925655487 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NALSOAgentTextLineDialog - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3868186929 - Action 2591963095 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 416138076">
+          <source>Adds a new line without an item number, right after the currently selected line - for a specification note or an item that could not be matched by number. Select the line it belongs after first, then type the full text in the dialog. No item lookup is performed.</source>
+          <target>Tilføjer en ny linje uden et varenummer, lige efter den aktuelt valgte linje - til en specifikationsnote eller en vare, der ikke kunne findes ud fra nummeret. Vælg først den linje, den skal placeres efter, og indtast derefter hele teksten i dialogboksen. Der udføres ikke noget vareopslag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NALSOAgentSalesQuoteSubformExt - Action NALSOAddTextLine - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3868186929 - Action 2591963095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 416138076">
+          <source>Add Text Line</source>
+          <target>Tilføj tekstlinje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NALSOAgentSalesQuoteSubformExt - Action NALSOAddTextLine - Property Caption</note>
         </trans-unit>
         <trans-unit id="Profile 1654288231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>NAL Sales Order Agent</source>

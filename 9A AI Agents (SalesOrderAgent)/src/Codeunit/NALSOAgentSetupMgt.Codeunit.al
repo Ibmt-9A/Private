@@ -30,6 +30,25 @@ codeunit 50103 NALSOAgentSetupMgt
         exit(Instructions);
     end;
 
+    /// <summary>
+    /// Pushes the current instructions (from resources) to every existing agent instance.
+    /// Must run on both install and upgrade, since instructions are only picked up by the platform when explicitly set.
+    /// </summary>
+    procedure RefreshInstructionsForAllAgents()
+    var
+        NALSOAgentSetup: Record NALSOAgentSetup;
+        Agent: Codeunit Agent;
+        Instructions: SecretText;
+    begin
+        if not NALSOAgentSetup.FindSet() then
+            exit;
+
+        Instructions := GetInstructions();
+        repeat
+            Agent.SetInstructions(NALSOAgentSetup."User Security ID", Instructions);
+        until NALSOAgentSetup.Next() = 0;
+    end;
+
     procedure GetDefaultProfile(var TempAllProfile: Record "All Profile" temporary)
     var
         CurrentModuleInfo: ModuleInfo;
